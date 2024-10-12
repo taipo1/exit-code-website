@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/base/container";
+import SecontionTitle from "../base/section-title";
 
 const tools = [
   ["React", "Typescript", "Jest", "Ci/Cd", "Sanity"],
@@ -7,6 +8,7 @@ const tools = [
   ["Next.js", "Tailwind", "Vercel", "Vue", "Azure"],
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const translate = "-translate-y-2 -translate-y-4 -translate-y-6";
 
 const About = () => (
@@ -24,11 +26,9 @@ const About = () => (
           </p>
         </div>
       </div>
-      <div className="max-h-[220px] -translate-y-2 pt-2">
-        <h2 className="text-stroke font-grotesk text-[108px] font-bold text-transparent text-stroke-white">
-          Toolbox
-        </h2>
-        <div className="flex -translate-y-[70px] flex-col gap-3">
+      <div className="max-h-[220px] translate-y-6 pt-2">
+        <SecontionTitle label="Toolbox" />
+        <div className="flex -translate-y-16 flex-col gap-3">
           {tools.map((toolRow, i) => (
             <div key={i} className={`-translate-y-${i * 2} flex gap-6`}>
               {toolRow.map((tool, j) => (
@@ -53,7 +53,7 @@ const About = () => (
       />
     </div>
     <div className="col-span-1 col-start-7 row-span-1 row-start-1 flex items-center justify-end">
-      <div className="relative h-[386px] w-1 bg-primary-300" />
+      <div className="relative h-[386px] w-1 rounded-full bg-primary-300" />
     </div>
   </Container>
 );

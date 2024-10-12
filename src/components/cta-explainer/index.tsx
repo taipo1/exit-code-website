@@ -2,7 +2,7 @@ import Container from "@/components/base/container";
 import LogoIcon from "@/icons/logo-icon";
 
 const CtaExplainer = () => (
-  <Container className="my-12">
+  <Container className="my-24">
     <div className="col-span-5 col-start-2 flex flex-col items-start justify-center gap-1">
       <h2 className="font-grotesk text-[28px] font-bold">
         Lets build something great together.
