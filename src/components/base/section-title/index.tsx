@@ -1,4 +1,9 @@
-const SecontionTitle = ({ label, className }) => (
+type SecontionTitleProps = {
+  label: string;
+  className?: string;
+}
+
+const SecontionTitle = ({ label, className }: SecontionTitleProps) => (
   <div className={className}>
     <h2 className="text-stroke -translate-y-0 font-grotesk text-[108px] font-semibold leading-none text-transparent text-stroke-white">
       {label}

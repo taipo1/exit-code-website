@@ -1,4 +1,8 @@
-const LogoIcon = ({ className }) => (
+type LogoIconProps = {
+  className?: string;
+}
+
+const LogoIcon = ({ className }: LogoIconProps) => (
   <svg
     className={className}
     width="53"

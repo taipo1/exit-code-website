@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/base/container";
-import SecontionTitle from "../base/section-title";
+
+import SecontionTitle from "@/components/base/section-title";
 
 const tools = [
   ["React", "Typescript", "Jest", "Ci/Cd", "Sanity"],

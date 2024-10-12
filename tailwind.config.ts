@@ -1,16 +1,4 @@
 import type { Config } from "tailwindcss";
-import textStroke from "@designbycode/tailwindcss-text-stroke";
-// import { Roboto, Space_Grotesk } from "next/font/google";
-
-// const roboto = Roboto({
-// 	weight: [400, 500, 600, 700],
-// 	subsets: ["latin"],
-// });
-
-// const grotesk = Space_Grotesk({
-// 	weight: [400, 500, 600, 700],
-// 	subsets: ["latin"],
-// });
 
 const config: Config = {
 	content: [
@@ -42,7 +30,8 @@ const config: Config = {
 	},
 	plugins: [
 		// ...other plugins
-		textStroke,
+		// eslint-disable-next-line @typescript-eslint/no-require-imports
+		require("@designbycode/tailwindcss-text-stroke"),
 	],
 };
 export default config;
