@@ -17,6 +17,8 @@ const config: Config = {
 				},
 				secondary: "#B79AE3",
 				dark: {
+					100: "#7B7B7B",
+					150: "#5B5B5B",
 					300: "#616568",
 					400: "#484848",
 					500: "#333232",
@@ -29,7 +31,6 @@ const config: Config = {
 		},
 	},
 	plugins: [
-		// ...other plugins
 		// eslint-disable-next-line @typescript-eslint/no-require-imports
 		require("@designbycode/tailwindcss-text-stroke"),
 	],

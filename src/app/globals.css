@@ -17,3 +17,11 @@
 body {
   @apply bg-dark-500 text-white;
 }
+
+
+
+@layer base {
+  input,textArea {
+    @apply p-4 border-dark-100 border-[3px] bg-transparent rounded-lg;
+  }
+}
