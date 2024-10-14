@@ -9,27 +9,27 @@ const Contact = () => {
                 Dit was mijn spreekbeurt. <br /> Zijn er nog vragen?
               </h2>
               <form>
-                <div className="grid grid-cols-6 gap-5 grid-rows-4"> 
+                <div className="grid grid-cols-6 gap-5 grid-rows-3"> 
                   <input
                     type="text"
                     placeholder="Naam"
-                    className="col-span-3 row-start-1"
+                    className="col-span-3 row-start-1 row-span-1"
                   />
                   <input
                     type="email"
                     placeholder="Email"
-                    className=" col-span-3 row-start-3"
+                    className=" col-span-3 row-start-2 row-span-1"
                   />
                   <input
                     type="text"
-                    placeholder="Laten we..."
-                    className="col-span-3 row-start-2"
+                    placeholder="Onderwerp"
+                    className="col-span-3 row-start-3 row-span-1"
                   />
                   <textarea
                     placeholder="Er was eens een..."
-                    className="col-span-3 min-h-[220px] max-h-[217px] row-span-3"
+                    className="col-span-3 row-span-2 min-h-[140px] max-h-[140px]" 
                   />
-                  <button className="border-[3px] border-dark-100 text-white col-span-2 col-start-5 p-4 rounded-lg">
+                  <button className="border-[3px] border-dark-100 row-span-1 text-white col-span-2 col-start-5 p-4 rounded-lg">
                     Verstuur
                   </button>
                 </div>

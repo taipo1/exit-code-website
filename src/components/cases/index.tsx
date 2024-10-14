@@ -34,7 +34,7 @@ const Cases = () => (
           </p>
         </div>
       </div>
-      <div className="relative col-span-6 col-start-7 row-span-2 h-[480px] rounded-lg bg-black">
+      <div className="relative col-span-6 col-start-7 row-span-2 h-[480px] rounded-lg overflow-hidden bg-black">
         <Image fill src={caseHighlight} alt="caseHighlight" />
       </div>
     </Container>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Space_Grotesk } from "next/font/google";
+import Navigation from "@/components/navigation";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${grotesk.variable} antialiased`}>
+        <Navigation />
         {children}
       </body>
     </html>
