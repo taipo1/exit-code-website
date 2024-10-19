@@ -13,9 +13,8 @@ export default function Home() {
       <Loader />
       <RevealWrapper Element={'span'} delay={.6}>
         <Hero />
-
-        <TextImage />
         <About />
+        <TextImage />
         <CtaExplainer />
         <Cases />
         <Contact />

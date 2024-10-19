@@ -13,7 +13,7 @@ const tools = [
 const translate = "-translate-y-2 -translate-y-4 -translate-y-6";
 
 const About = () => {
-  const enterDelay = 0
+  const enterDelay = .6
   return (
   <Container className={"my-12"}>
     <div  className="col-span-5 col-start-2 md:col-span-5 xl:col-span-4 xl:row-start-1 xl:row-span-3 flex flex-col gap-4">
