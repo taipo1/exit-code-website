@@ -19,7 +19,7 @@ const ImageBorder = ({className, height, width , src}: ImageBorderProps): JSX.El
         alt=""
         />
       </RevealWrapper>
-      <RevealWrapper Element="div" className={`w-full h-full absolute border-[8px]  md:border-[12px] rounded-lg border-primary-300 z-20 ${className}`} />
+      <RevealWrapper delay={.3} Element="div" className={`w-full h-full absolute border-[8px]  md:border-[12px] rounded-lg border-primary-300 z-20 ${className}`} />
   </RevealWrapper>
 )
 
