@@ -41,7 +41,7 @@ const About = () => {
       <p className="">Samen sta je sterker maar toch werk ik alleen. Wanneer er behoefte is aan een hogere capaciteit of een aanvullende specialicatie werk ik nauw samen met andere individuen. Zo kan er flexibel opgeschaald worden op basis van behoefte.</p>
     </RevealWrapper>
     <div className="max-sm:row-start-8 col-start-1 col-span-6 lg:col-span-5 xl:col-span-4 lg:col-start-1 flex flex-col">
-      <RevealWrapper Element={"h2"} className="text-stroke max-h-fit font-grotesk text-6xl font-bold leading-none text-transparent text-stroke-white">Toolbox</RevealWrapper>
+      <RevealWrapper delay={.4} Element={"h2"} className="text-stroke max-h-fit font-grotesk text-6xl font-bold leading-none text-transparent text-stroke-white">Toolbox</RevealWrapper>
       <div>
       {tools.map((toolRow, i) => (
         <div key={i} className={`-translate-y-${i * 2} flex gap-2`}>
