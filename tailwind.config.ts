@@ -28,6 +28,9 @@ const config: Config = {
 				roboto: "var(--roboto)",
 				grotesk: "var(--grotesk)",
 			},
+			fontSize: {
+				base: "1.063rem"
+			}
 		},
 	},
 	plugins: [

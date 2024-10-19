@@ -25,3 +25,11 @@ body {
     @apply p-4 border-dark-100 border-[3px] bg-transparent rounded-lg;
   }
 }
+
+p {
+  @apply font-light font-roboto text-base
+}
+
+h3 {
+  @apply font-bold font-roboto text-xl
+}
