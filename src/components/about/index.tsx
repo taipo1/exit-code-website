@@ -1,7 +1,7 @@
 import Container from "@/components/base/container";
 import Image from "@/components/base/base-image";
 import me from "@/public/assets/me.jpg";
-import RevealWrapper from "@/components/reveal-wrapper";
+import RevealWrapper from "@/components/gsap/reveal-wrapper";
 
 const tools = [
   ["React", "Typescript", "Jest", "Ci/Cd", "Sanity"],

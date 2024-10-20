@@ -5,7 +5,7 @@ import CtaExplainer from "@/components/cta-explainer";
 import Cases from "@/components/cases";
 import Contact from "@/components/contact";
 import { Loader } from "@/components/loader";
-import RevealWrapper from "@/components/reveal-wrapper";
+import RevealWrapper from "@/components/gsap/reveal-wrapper";
 
 export default function Home() {
   return (
