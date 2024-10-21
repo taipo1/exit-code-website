@@ -1,5 +1,5 @@
 import Container from "@/components/base/container";
-import LogoIcon from "@/icons/logo-icon";
+import LogoIcon from "@/svg/logo-icon";
 const Hero = () => { 
   return (
     <Container className="">
