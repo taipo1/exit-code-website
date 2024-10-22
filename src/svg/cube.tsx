@@ -1,11 +1,13 @@
+'use client';
+
 type CubeProps = {
   showLogo?: boolean;
   className?: string;
 }
 
 const Cube = ({showLogo = false, className}: CubeProps) => {
-
   return (
+  
     <svg className={className} width="162" height="188" viewBox="0 0 162 188" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M161.978 141V47L80.9781 94V188L161.978 141Z" fill="#E22828"/>
       <path d="M0.0227744 47V141L81.0226 188V94L0.0227744 47Z" fill="#FF5E5E"/>

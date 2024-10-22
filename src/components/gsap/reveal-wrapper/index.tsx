@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 type RevealWrapperProps = {
   children?: ReactNode;
   delay?: number;
+  duration?: number;
   className?: string;
   Element: ElementType;
 };
@@ -14,7 +15,7 @@ type RevealWrapperProps = {
 // Ensure the ScrollTrigger plugin is registered before usage
 gsap.registerPlugin(ScrollTrigger);
 
-const RevealWrapper = forwardRef<HTMLDivElement, RevealWrapperProps>(({ children, delay, className, Element }, ref): JSX.Element => {
+const RevealWrapper = forwardRef<HTMLDivElement, RevealWrapperProps>(({duration,  children, delay, className, Element }, ref): JSX.Element => {
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ const RevealWrapper = forwardRef<HTMLDivElement, RevealWrapperProps>(({ children
         {
           opacity: 1,
           y: 0,
-          duration: 1,
+          duration: duration || 1,
           delay: delay || 0,
           ease: 'power2.out',
           scrollTrigger: {

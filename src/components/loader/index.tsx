@@ -2,69 +2,73 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Cube from "@/svg/cube";
+import GrayScaleWrapper from "../gsap/gray-scale-wrapper";
+import RevealWrapper from "../gsap/reveal-wrapper";
 
 const Loader = () => {
   const loaderRef = useRef<HTMLDivElement | null>(null);
-  const logo = useRef<SVGCircleElement | null>(null);
-  const front = useRef<SVGCircleElement | null>(null);
-  const top = useRef<SVGCircleElement | null>(null);
-  const right = useRef<SVGCircleElement | null>(null);
   const largeCube = useRef<HTMLDivElement | null>(null);
   const mediumCube = useRef<HTMLDivElement | null>(null);
   const smallCube = useRef<HTMLDivElement | null>(null);
 
-  const refObj = {
-    logo,
-    front,
-    top,
-    right,
-  };
-
   useEffect(() => {
     if (loaderRef.current) {
 
-      // gsap.to(loaderRef.current, {
-      //   opacity: 0,
-      //   delay: 0.2,
-      //   duration: 0.5,
-      //   ease: 'power2.out',
-      //   onComplete: () => {
-      //     if (loaderRef.current) {
-      //       loaderRef.current.style.display = 'none';
-      //     }
-      //   },
-      // });
+      gsap.to(loaderRef.current, {
+        opacity: 0,
+        delay: 1.2,
+        duration: 0.7,
+        ease: 'power2.out',
+        onComplete: () => {
+          if (loaderRef.current) {
+            loaderRef.current.style.display = 'none';
+          }
+        },
+      });
 
       gsap.fromTo(largeCube.current,{}, {
-        y: -22,
+        y: -30,
         duration: .7,
-        repeat: 1,
+        repeat: 2,
+        delay: .3,
         yoyo: true,
         ease: 'power1.easeIn',
       })
-      gsap.fromTo(largeCube.current,{}, {
-        y: -22,
+      gsap.fromTo(mediumCube.current,{y: 0}, {
+        y: -30,
         duration: .7,
-        repeat: 1,
+        repeat: 2,
+        delay: .2,
+        yoyo: true,
+        ease: 'power1.easeIn',
+      })
+      gsap.fromTo(smallCube.current,{y: 0}, {
+        y: -30,
+        duration: .7,
+        repeat: 2,
         yoyo: true,
         ease: 'power1.easeIn',
       })
     }
   }, []);
+
   return (
     <div ref={loaderRef} className="fixed inset-0 flex items-center justify-center bg-dark-500 z-50">
-      <div className="relative w-3">
-        <div className="z-30 absolute top-10 right-40" ref={smallCube}>
-          <Cube className="w-56 h-56" />
-        </div>
-        <div className="z-20 right-[10px] -top-[68px] absolute" ref={mediumCube}>
-          <Cube className="w-64 h-64" />
-        </div>
-        <div className=" z-10 absolute -right-[160px] -top-[188px]" ref={largeCube}>
-          <Cube className="w-72 h-72" showLogo />
-        </div>
-
-      </div>
+      <RevealWrapper duration={.5} Element="div" className="flex flex-col items-center justify-center opacity-0">
+        <GrayScaleWrapper>
+          <div className="scale-50 relative w-3">
+            <div className="z-30 absolute  right-40 drop-shadow-lg grayscale-0" ref={smallCube}>
+              <Cube  className="w-56 h-56 small" />
+            </div>
+            <div className="z-20 -right-[20px] -bottom-[130px] absolute drop-shadow-lg" ref={mediumCube}>
+              <Cube className="w-72 h-[270px]" />
+            </div>
+            <div  className=" z-10 absolute -right-[250px] -bottom-[30px] drop-shadow-lg"  ref={largeCube}>
+              <Cube className="w-[380px] h-[340px]" showLogo />
+            </div>
+          </div>
+        </GrayScaleWrapper>
+      </RevealWrapper>
     </div>
   );
 };
