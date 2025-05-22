@@ -33,7 +33,7 @@ const RevealWrapper = forwardRef<HTMLDivElement, RevealWrapperProps>(({ children
             trigger: targetRef,
             start: 'top 80%',
             toggleActions: 'play none none none',
-            markers: true, // Disable markers for clean view
+            markers: false, // Disable markers for clean view
           },
         }
       );

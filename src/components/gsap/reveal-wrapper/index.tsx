@@ -39,7 +39,7 @@ const RevealWrapper = forwardRef<HTMLDivElement, RevealWrapperProps>(({duration,
         }
       );
     }
-  }, [delay]);
+  }, [delay, duration]);
 
   return <Element className={className} ref={ref ? (ref as React.RefObject<HTMLDivElement>) : wrapperRef}>{children}</Element>;
 });

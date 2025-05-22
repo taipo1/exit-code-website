@@ -6,11 +6,6 @@ import vrMadness from "@/public/assets/vr-madness.jpg";
 // import GsapFloater from "../gsap/floater";
 const TextImage = () => (
   <section className="relative">
-    {/* <RevealWrapper Element={"div"}>
-      <GsapFloater className="absolute justify-end -left-80 hidden 2xl:flex pr-2 w-[500px] h-[500px] border-[18px] rounded-2xl border-primary-300 inset-0 z-50" >
-        <p className="font-grotesk w-2/4 text-2xl text-right">Thats real screen real-estate</p>
-      </GsapFloater>
-    </RevealWrapper> */}
     <Container className={"my-32 grid-rows-1 md:grid-rows-1 lg:grid-rows-4"}>
       <div className="col-span-4 col-start-2 row-span-1 md:col-start-1 md:row-start-1 md:row-span-3 lg:row-span-3 md:col-span-5">
         <ImageBorder src={vrMadness} width={505} height={337} className="top-[40px] left-[40px] md:top-[104px] md:left-[104px]" />

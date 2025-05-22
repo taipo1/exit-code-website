@@ -1,24 +1,13 @@
 import Hero from "@/components/hero";
 import About from "@/components/about";
-import TextImage from "@/components/text-image";
-import CtaExplainer from "@/components/cta-explainer";
-import Cases from "@/components/cases";
-import Contact from "@/components/contact";
-import { Loader } from "@/components/loader";
-import RevealWrapper from "@/components/gsap/reveal-wrapper";
+import ClientJourneyExplainer from "@/components/client-journey-explainer";
 
 export default function Home() {
   return (
     <div>
-      <Loader />
-      <RevealWrapper Element={'span'} delay={.6}>
         <Hero />
-        <About />
-        <TextImage />
-        <CtaExplainer />
-        <Cases />
-        <Contact />
-      </RevealWrapper>
+         <About />
+        <ClientJourneyExplainer />
     </div>
   );
 }

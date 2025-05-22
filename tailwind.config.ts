@@ -10,12 +10,15 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				white: "#D9D9D9",
+				white: "#F6F4EE",
 				primary: {
-					300: "#FF4747",
-					400: "#E22828",
+					300: "#D6452D",
+					400: "#FF674E",
 				},
-				secondary: "#B79AE3",
+				secondary:{
+					300: "#141E25",
+					400: "#0F171D",
+				},
 				dark: {
 					100: "#7B7B7B",
 					150: "#5B5B5B",
@@ -25,8 +28,7 @@ const config: Config = {
 				},
 			},
 			fontFamily: {
-				roboto: "var(--roboto)",
-				grotesk: "var(--grotesk)",
+				dmSans: "var(--dm-sans)",
 			},
 			fontSize: {
 				base: "1.063rem"
