@@ -12,7 +12,7 @@ type ImageProps = {
 }
 const Image = ({src, alt, width, height, fill = false, className}: ImageProps) => {
     return (
-      <div className={`min-w-full relative min-h-full ${className}`}>
+      <div className={`min-w-full relative h-full ${className}`}>
         <NextImage
             className="z-0"
             fill={fill}
