@@ -13,58 +13,85 @@ const Loader = () => {
 
   useEffect(() => {
     if (loaderRef.current) {
-
       gsap.to(loaderRef.current, {
         opacity: 0,
         delay: 1.2,
         duration: 0.7,
-        ease: 'power2.out',
+        ease: "power2.out",
         onComplete: () => {
           if (loaderRef.current) {
-            loaderRef.current.style.display = 'none';
+            loaderRef.current.style.display = "none";
           }
         },
       });
 
-      gsap.fromTo(largeCube.current,{}, {
-        y: -30,
-        duration: .7,
-        repeat: 2,
-        delay: .3,
-        yoyo: true,
-        ease: 'power1.easeIn',
-      })
-      gsap.fromTo(mediumCube.current,{y: 0}, {
-        y: -30,
-        duration: .7,
-        repeat: 2,
-        delay: .2,
-        yoyo: true,
-        ease: 'power1.easeIn',
-      })
-      gsap.fromTo(smallCube.current,{y: 0}, {
-        y: -30,
-        duration: .7,
-        repeat: 2,
-        yoyo: true,
-        ease: 'power1.easeIn',
-      })
+      gsap.fromTo(
+        largeCube.current,
+        {},
+        {
+          y: -30,
+          duration: 0.7,
+          repeat: 2,
+          delay: 0.3,
+          yoyo: true,
+          ease: "power1.easeIn",
+        },
+      );
+      gsap.fromTo(
+        mediumCube.current,
+        { y: 0 },
+        {
+          y: -30,
+          duration: 0.7,
+          repeat: 2,
+          delay: 0.2,
+          yoyo: true,
+          ease: "power1.easeIn",
+        },
+      );
+      gsap.fromTo(
+        smallCube.current,
+        { y: 0 },
+        {
+          y: -30,
+          duration: 0.7,
+          repeat: 2,
+          yoyo: true,
+          ease: "power1.easeIn",
+        },
+      );
     }
   }, []);
 
   return (
-    <div ref={loaderRef} className="fixed inset-0 flex items-center justify-center bg-dark-500 z-50">
-      <RevealWrapper duration={.5} Element="div" className="flex flex-col items-center justify-center opacity-0">
+    <div
+      ref={loaderRef}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-dark-500"
+    >
+      <RevealWrapper
+        duration={0.5}
+        Element="div"
+        className="flex flex-col items-center justify-center opacity-0"
+      >
         <GrayScaleWrapper>
-          <div className="scale-50 relative w-3">
-            <div className="z-30 absolute  right-40 drop-shadow-lg grayscale-0" ref={smallCube}>
-              <Cube  className="w-56 h-56 small" />
+          <div className="relative w-3 scale-50">
+            <div
+              className="absolute right-40 z-30 drop-shadow-lg grayscale-0"
+              ref={smallCube}
+            >
+              <Cube className="small h-56 w-56" />
             </div>
-            <div className="z-20 -right-[20px] -bottom-[130px] absolute drop-shadow-lg" ref={mediumCube}>
-              <Cube className="w-72 h-[270px]" />
+            <div
+              className="absolute -bottom-[130px] -right-[20px] z-20 drop-shadow-lg"
+              ref={mediumCube}
+            >
+              <Cube className="h-[270px] w-72" />
             </div>
-            <div  className=" z-10 absolute -right-[250px] -bottom-[30px] drop-shadow-lg"  ref={largeCube}>
-              <Cube className="w-[380px] h-[340px]" showLogo />
+            <div
+              className="absolute -bottom-[30px] -right-[250px] z-10 drop-shadow-lg"
+              ref={largeCube}
+            >
+              <Cube className="h-[340px] w-[380px]" showLogo />
             </div>
           </div>
         </GrayScaleWrapper>

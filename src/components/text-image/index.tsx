@@ -7,18 +7,31 @@ import vrMadness from "@/public/assets/vr-madness.jpg";
 const TextImage = () => (
   <section className="relative">
     <Container className={"my-32 grid-rows-1 md:grid-rows-1 lg:grid-rows-4"}>
-      <div className="col-span-4 col-start-2 row-span-1 md:col-start-1 md:row-start-1 md:row-span-3 lg:row-span-3 md:col-span-5">
-        <ImageBorder src={vrMadness} width={505} height={337} className="top-[40px] left-[40px] md:top-[104px] md:left-[104px]" />
+      <div className="col-span-4 col-start-2 row-span-1 md:col-span-5 md:col-start-1 md:row-span-3 md:row-start-1 lg:row-span-3">
+        <ImageBorder
+          src={vrMadness}
+          width={505}
+          height={337}
+          className="left-[40px] top-[40px] md:left-[104px] md:top-[104px]"
+        />
       </div>
-      <RevealWrapper Element="div" className="col-start-1 row-start-3 row-span-12 col-span-6 md:row-start-2 md:col-start-8 md:-translate-y-1 md:col-span-5 md:row-span-4 lg:col-start-8 lg:row-start-2 lg:col-span-5 flex items-start xl:-translate-y-6">
+      <RevealWrapper
+        Element="div"
+        className="col-span-6 col-start-1 row-span-12 row-start-3 flex items-start md:col-span-5 md:col-start-8 md:row-span-4 md:row-start-2 md:-translate-y-1 lg:col-span-5 lg:col-start-8 lg:row-start-2 xl:-translate-y-6"
+      >
         <div className="flex flex-col gap-4">
-          <h2 className="flex items-start font-grotesk text-xl md:text-4xl font-bold text-white">
+          <h2 className="font-grotesk flex items-start text-xl font-bold text-white md:text-4xl">
             Optimimalisatie van jouw bedrijfs proces als sleutel tot succes
           </h2>
-          <div className="self-center flex flex-col gap-4">
-            <p>Jouw bedrijf verdient geen standaard website, maar een slimme, toekomstbestendige oplossing die met je meegroeit.</p> 
+          <div className="flex flex-col gap-4 self-center">
             <p>
-              Bij Exit Code 0 bouwen we digitale producten die niet alleen vandaag presteren, maar ook klaar zijn voor de uitdagingen van morgen.
+              Jouw bedrijf verdient geen standaard website, maar een slimme,
+              toekomstbestendige oplossing die met je meegroeit.
+            </p>
+            <p>
+              Bij Exit Code 0 bouwen we digitale producten die niet alleen
+              vandaag presteren, maar ook klaar zijn voor de uitdagingen van
+              morgen.
             </p>
           </div>
         </div>

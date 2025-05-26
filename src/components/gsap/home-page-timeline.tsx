@@ -1,8 +1,8 @@
-'use client';
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { TextPlugin } from 'gsap/TextPlugin';
+"use client";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -13,7 +13,7 @@ const ScrollEffects = () => {
       opacity: 0,
       y: -350,
       ease: "power2.out",
-      duration: .3,
+      duration: 0.3,
       scrollTrigger: {
         trigger: "#hero",
         start: "top top",
@@ -24,7 +24,7 @@ const ScrollEffects = () => {
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
