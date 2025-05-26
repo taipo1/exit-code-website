@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans  } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import Navigation from "@/components/navigation";
 import "./globals.css";
 
@@ -8,7 +8,6 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--dm-sans",
 });
-
 
 export const metadata: Metadata = {
   title: "Gericht",

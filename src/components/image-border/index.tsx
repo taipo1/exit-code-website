@@ -7,23 +7,34 @@ type ImageBorderProps = {
   className: string;
   height: number;
   width: number;
-  src: StaticImageData ;
-}
-const ImageBorder = ({className, height, width , src}: ImageBorderProps): JSX.Element => (
-<RevealWrapper className="relative w-full h-full" Element="div" >
-      
-        <MouseTracker className="relative z-30">
-          <RevealWrapper Element={"div"} className="relative overflow-hidden rounded-lg shadow-2xl">
-              <Image
-                width={width}
-                height={height}
-                src={src || "https://via.placeholder.com/505x337"}
-                alt=""
-              />
-          </RevealWrapper>
-        </MouseTracker>
-          <RevealWrapper delay={.3} Element="div" className={`w-full h-full absolute border-[8px]  md:border-[12px] rounded-lg border-primary-300 z-20 ${className}`} />
+  src: StaticImageData;
+};
+const ImageBorder = ({
+  className,
+  height,
+  width,
+  src,
+}: ImageBorderProps): JSX.Element => (
+  <RevealWrapper className="relative h-full w-full" Element="div">
+    <MouseTracker className="relative z-30">
+      <RevealWrapper
+        Element={"div"}
+        className="relative overflow-hidden rounded-lg shadow-2xl"
+      >
+        <Image
+          width={width}
+          height={height}
+          src={src || "https://via.placeholder.com/505x337"}
+          alt=""
+        />
+      </RevealWrapper>
+    </MouseTracker>
+    <RevealWrapper
+      delay={0.3}
+      Element="div"
+      className={`absolute z-20 h-full w-full rounded-lg border-[8px] border-primary-300 md:border-[12px] ${className}`}
+    />
   </RevealWrapper>
-)
+);
 
 export default ImageBorder;
