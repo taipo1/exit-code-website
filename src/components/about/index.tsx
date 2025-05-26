@@ -1,33 +1,38 @@
-import Container from "@/components/base/container";
-import Image from "@/components/base/base-image";
-import me from "@/public/assets/me.jpg";
-import Oermens from "@/public/assets/oermens_raw.jpg";
-import RevealWrapper from "@/components/gsap/reveal-wrapper";
-import BaseImage from "@/components/base/base-image";
-import OpacityWrapper from "../gsap/opacity-wrapper";
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const translate = "-translate-y-2 -translate-y-4 -translate-y-6";
+import Container from "../base/container";
+import Image from "../base/base-image";
+import me from "@/public/assets/me.jpg"
 
 const About = () => {
-  const enterDelay = 1
   return (
-  <Container className={"my-12 grid-rows-6 gap-y-2"}>
-  <div className="col-span-6 row-start-1 row-span-6 col-start-2 pr-6">
-    <BaseImage src={Oermens} alt={"A picture of Ramsey"} />
-  </div>
-  <RevealWrapper Element="h2" className="col-start-8 row-start-1 col-span-4 font-medium text-[26px] leading-none">
-    Van knelpunt naar <span className="text-primary-300 font-semibold">krachtpatser.</span>
-  </RevealWrapper>
-  <OpacityWrapper delay={ 0.1} Element="div" className="col-start-8 text-lg col-span-4 row-start-2 row-span-5 text-[18px] flex flex-col gap-4 -translate-y-4">
-    <p>Websites worden vaak gebouwd om te zeggen wat je doet. Maar verbeteren zelden waar je mee bezig bent.</p>
-
-    <p>Gericht is er voor ondernemers die verder willen. Die kansen zien om slimmer te werken.</p>
-
-    <p>Wij zijn bemoeials met een plan.We graven in je processen. Zo zien we wat schuurt. En bouwen wat stroomlijnt. Automatisering, AI, maatwerk. Geen buzzwords — gewoon gericht wat werkt.</p>
-  </OpacityWrapper>
-  </Container>
-)
-};
+    <section id="about">
+      <Container className="grid-rows-auto">
+        <div className="flex flex-col gap-2 col-start-2 col-span-5 row-start-1 mb-4">
+          <h2 className="text-[48px] font-semibold leading-[.6]">Bemoeial in beeld</h2>
+          <p className="text-primary-300 font-semibold">Wat gericht anders maakt</p>
+        </div>
+        <div className="col-span-3 row-start-2 col-start-2 gap-4 flex flex-col pr-16">
+          <h3 className="text-2xl font-semibold gap-2"><span className="font-semibold">Wij zijn bemoeials.</span> In de beste zin van het woord.</h3>
+          
+          <p className="border-l-2 pl-2 border-primary-300 border-opacity-50 mb-2">individualisten die de handen in een slaan gericht is gebouwd op nieuwsgierigheid. We willen weten hoe je werkt. Waar het piept. Waar je kansen laat liggen. Niet om te oordelen, maar om te bouwen wat er écht nodig is.</p>
+          <p className="border-l-2 pl-2 border-primary-300 border-opacity-50">
+            We komen niet binnen met een gelikt voorstel. We stellen vragen. Dieper dan je gewend bent. Over je processen, je klanten, je doelen. Want daar ligt het echte werk.
+          </p>
+        </div>
+        <div className="col-span-3 row-start-2 col-start-5 gap-4 flex flex-col pr-16">
+          <h3 className="text-2xl font-semibold gap-2">Developers met strategische oren</h3>
+          <div className="flex flex-col gap-2 justify-between h-full">
+            <p className="border-l-2 pl-2 border-primary-300 border-opacity-50 mb-2">We begrijpen code, maar ook context. We zien je website niet als een eindproduct, maar als een onderdeel van je bedrijfsmotor. Daarom bouwen we niets wat losstaat van de rest.</p>
+            <p className="border-l-2 pl-2 border-primary-300 border-opacity-50">Geen agency-vibe, geen klantenshow. Gewoon samenwerken. Kort op de bal. Zodat je sneller kunt verbeteren, en slimmer kunt groeien.</p>
+          </div>
+        </div>
+        <div className="col-span-4 col-start-8 row-span-2 flex flex-col justify-start">
+          <Image className=" min-h-auto" src={me} alt={"A picture of Ramsey"} />
+          <p className="-translate-y-6">Altijd met grote ogen. Gericht op <br/> wat anderen missen</p>
+        </div>
+        
+      </Container>
+    </section>
+  );
+}
 
 export default About;
