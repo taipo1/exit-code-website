@@ -1,15 +1,19 @@
 import Container from "../base/container";
 import JourneyCard from "./journey-card";
+import IconLarge from "@/svg/icon-large"; 
 
 const ClientJourneyExplainer = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-4">
-      {/* <h1 className="text-2xl font-bold">Client Journey Explainer</h1>
-      <p className="mt-4 text-lg">
-        This component explains the client journey in a clear and concise manner.
-      </p> */}
-      <Container className="my-10">
-        <div className="col-span-10 col-start-2 flex gap-[72px] justify-between items-baseline">
+      <Container className="my-10 grid-rows-2">
+        <div className="row-span-1 col-span-5 xl:col-span-4 col-start-1 xl:col-start-2">
+          <h2 className="text-2xl font-bold flex flex-col gap-2 text-[26px]"><span>Wat we doen
+          </span> <span>als we ons ergens mee bemoeien.</span></h2>
+          <p className="mt-4 text-lg">
+            We bouwen precies wat jouw bedrijf nodig heeft om soepeler te draaien. Minder gedoe, meer grip. En altijd gericht op resultaat.
+          </p>
+        </div>
+        <div className="-translate-y-16 row-span-1 col-span-12 col-start-1 xl:col-span-10 xl:col-start-2 row-start-2 flex gap-[72px] justify-around xl:justify-between">
           <JourneyCard
             title="Eén sessie. Tien inzichten."
             description="We stappen in jouw operatie en halen boven wat vertraagt, verdwijnt of fout gaat. Geen audit, maar een scherpe spiegel."
@@ -27,6 +31,9 @@ const ClientJourneyExplainer = () => {
             index={3}
             className="translate-y-8"
           />
+        </div>
+        <div className="col-start-6 xl:col-start-7 col-span-4 row-start-1 row-span-5 flex justify-end">
+          <IconLarge />
         </div>
       </Container>
     </div>
