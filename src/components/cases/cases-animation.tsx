@@ -19,7 +19,7 @@ const CasesAnimation = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: "#cases",
-          start: "top 80%",
+          start: "top+=200 80%",
           toggleActions: "play none none none",
           markers: true,
         },
@@ -38,12 +38,12 @@ const CasesAnimation = () => {
         y: 0,
         duration: 0.6,
         ease: "power2.out",
-        delay: 2.5, // Sync with stagger
+        delay: 2.2, // Sync with stagger
         scrollTrigger: {
           trigger: "#cases",
           start: "top 80%",
           toggleActions: "play none none none",
-          markers: true,
+          markers: false,
         },
       },
     );
@@ -59,14 +59,16 @@ const CasesAnimation = () => {
         start: "center center",
         end: "bottom+=50 top", // when it's leaving the viewport
         scrub: true,
-        markers: true,
+        markers: false,
       },
     });
 
     // Fade out cards
     tlCasesExit.to(".case-card", {
       opacity: 0,
-      y: -30,
+      y: -50,
+      x: 10,
+      rotate: 1,
       stagger: {
         each: 0.2,
         from: "end", // 👈 reverse the order
@@ -81,10 +83,11 @@ const CasesAnimation = () => {
       {
         opacity: 0,
         y: -20,
+        x: 20,
         ease: "power2.inOut",
         duration: 0.4,
       },
-      "<+0.2",
+      "<+0.1",
     ); // slightly after cards start fading out
   }, []);
 

@@ -11,11 +11,11 @@ const MissionAnimation = () => {
       scrollTrigger: {
         trigger: "#mission-wrapper",
         start: "top center",
-        end: "bottom+=450 center",
+        end: "bottom+=500 center",
         scrub: true,
         pin: true,
-        pinSpacing: true,
-        markers: true,
+        pinSpacing: false,
+        markers: false,
       },
     });
 

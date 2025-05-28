@@ -17,6 +17,7 @@ export default function Home() {
       >
         <Mission />
       </div>
+      <div className="h-[800px]" />
       <Cases />
       <ClientJourneyExplainer />
       <Cta />

@@ -6,7 +6,7 @@ const Cases = () => (
   <section id="cases" className="-translate-y-16">
     <CasesAnimation />
     <Container className="max-md:gap-y-4">
-      <div className="col-span-5 col-start-1 flex flex-col gap-4 sm:col-start-2 xl:col-span-4 xl:col-start-3">
+      <div className="col-span-6 col-start-1 flex flex-col gap-4 sm:col-start-2 xl:col-span-4 xl:col-start-3">
         <h2 className="-translate-y-2 pr-8 text-[44px] font-medium leading-[1.1]">
           Hoe anderen{" "}
           <span className="font-semibold text-primary-300">gericht</span> te
@@ -14,7 +14,7 @@ const Cases = () => (
         </h2>
         <CaseCard />
       </div>
-      <div className="col-span-5 flex flex-col gap-4 max-sm:col-start-2 xl:col-span-4 xl:col-start-7">
+      <div className="col-span-6 flex flex-col gap-4 xl:col-span-4 xl:col-start-7">
         <CaseCard />
         <div className="case-cta flex flex-col">
           <h3 className="text-2xl font-semibold">
