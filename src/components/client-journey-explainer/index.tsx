@@ -34,16 +34,16 @@ const ClientJourneyExplainer = () => {
             title="Van knelpunt naar werkend systeem."
             description="We bouwen tools die je proces écht beter maken: dashboards, koppelingen, automatisering. Geen templatewerk, maar slimme bouwblokken."
             index={2}
-            className="self-start lg:-translate-y-[46px]"
+            className="self-start lg:-translate-y-[44px]"
           />
           <JourneyCard
             title="Doorgroeien & doorbouwen"
             description="Ook na livegang blijven we aan. We monitoren, verbeteren en bouwen door waar nodig. Geen lock-in, wel duurzame impact."
             index={3}
-            className="-translate-y-[16px] self-end"
+            className="self-end"
           />
         </div>
-        <div className="col-span-4 col-start-7 row-span-3 row-start-1">
+        <div id="big-icon" className="col-span-4 col-start-7 row-span-3 row-start-1">
           <IconLarge />
         </div>
       </Container>
