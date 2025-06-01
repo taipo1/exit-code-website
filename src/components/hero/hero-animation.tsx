@@ -19,7 +19,6 @@ const HeroAnimation = () => {
         start: "top-=100 top",
         end: "bottom top",
         scrub: true,
-        markers: false,
       },
     });
 

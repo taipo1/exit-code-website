@@ -17,7 +17,6 @@ const CtaAnimation = () => {
           trigger: "#cta",
           start: "top 80%",
           toggleActions: "play none none none",
-          markers: false,
         },
       },
     );
@@ -48,7 +47,6 @@ const CtaAnimation = () => {
         start: "center center",
         end: "bottom top",
         scrub: true,
-        markers: false,
       },
     });
 

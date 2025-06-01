@@ -15,7 +15,6 @@ const MissionAnimation = () => {
         scrub: true,
         pin: true,
         pinSpacing: false,
-        markers: false,
       },
     });
 

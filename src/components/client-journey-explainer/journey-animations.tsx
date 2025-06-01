@@ -164,7 +164,6 @@ const JourneyAnimation = () => {
         start: "center center",
         end: "bottom top",
         scrub: true,
-        markers: true,
       },
     });
 
