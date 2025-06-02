@@ -1,11 +1,16 @@
 import Container from "@/components/base/container";
+import LogoIcon from "@/svg/logo-icon";
 const Navigation = () => {
   return (
-    <>
       <div className="sticky top-0 z-30">
-        <nav className="relative z-50 border-b-2 border-primary-300 bg-dark-400">
+        <nav className="relative z-50 border-b-2 border-primary-300 bg-white">
           <Container>
-            <ul>
+            <div className="col-span-2 col-start-2">
+              <a href="#" className="text-2xl relative max-w-[130px] w-1/2 font-bold">
+                <LogoIcon className="max-w-[130px]" />
+              </a>
+            </div>
+            <ul className="flex col-span-5 space-x-4">
               <li>
                 <a href="/home">Home</a>
               </li>
@@ -19,7 +24,7 @@ const Navigation = () => {
           </Container>
         </nav>
       </div>
-    </>
+
   );
 };
 

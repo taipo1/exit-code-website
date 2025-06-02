@@ -21,7 +21,6 @@ const CasesAnimation = () => {
           trigger: "#cases",
           start: "top+=200 80%",
           toggleActions: "play none none none",
-          markers: true,
         },
       },
     );
@@ -43,7 +42,6 @@ const CasesAnimation = () => {
           trigger: "#cases",
           start: "top 80%",
           toggleActions: "play none none none",
-          markers: false,
         },
       },
     );
@@ -59,7 +57,6 @@ const CasesAnimation = () => {
         start: "center center",
         end: "bottom+=50 top", // when it's leaving the viewport
         scrub: true,
-        markers: false,
       },
     });
 

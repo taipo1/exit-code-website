@@ -32,20 +32,20 @@ const ClientJourneyExplainer = () => {
           />
           <JourneyCard
             title="Van knelpunt naar werkend systeem."
-            description="We bouwen tools die je proces écht beter maken: dashboards, koppelingen, automatisering. Geen templatewerk, maar slimme bouwblokken."
+            description="We bouwen tools die je proces écht beter maken: dashboards, koppelingen, automatisering. maatwerk toegespitst op jouw organisatie."
             index={2}
             className="self-start lg:-translate-y-[44px]"
           />
           <JourneyCard
             title="Doorgroeien & doorbouwen"
-            description="Ook na livegang blijven we aan. We monitoren, verbeteren en bouwen door waar nodig. Geen lock-in, wel duurzame impact."
+            description="Ook na livegang blijven we aan. We monitoren, verbeteren en bouwen door waar nodig."
             index={3}
             className="md:self-end"
           />
         </div>
         <div
           id="big-icon"
-          className="col-span-4 col-start-2 row-span-3 row-start-1 md:col-start-7 md:row-start-1"
+          className="col-span-4 col-start-7 row-span-3 row-start-1"
         >
           <IconLarge />
         </div>

@@ -48,9 +48,13 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-6 row-span-1 flex flex-col justify-start md:col-span-4 md:col-start-8 md:row-span-2">
-          <Image className="min-h-auto" src={me} alt={"A picture of Ramsey"} />
-          <p className="">
+        <div className="col-span-4 col-start-8 row-span-2 flex flex-col justify-start">
+          <Image
+            className="min-h-auto overflow-hidden rounded-[4px]"
+            src={me}
+            alt={"A picture of Ramsey"}
+          />
+          <p className="-translate-y-6">
             Altijd met grote ogen. Gericht op <br /> wat anderen missen
           </p>
         </div>
