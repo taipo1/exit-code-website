@@ -6,15 +6,15 @@ const About = () => {
   return (
     <section id="about">
       <Container className="grid-rows-auto">
-        <div className="col-span-5 col-start-2 row-start-1 mb-4 flex flex-col gap-2">
-          <h2 className="text-[48px] font-semibold leading-[.6]">
+        <div className="col-span-6 mb-4 flex flex-col gap-2 md:col-span-5 md:col-start-2 md:row-start-1">
+          <h2 className="text-[48px] font-semibold leading-[.8]">
             Bemoeial in beeld
           </h2>
           <p className="font-semibold text-primary-300">
             Wat gericht anders maakt
           </p>
         </div>
-        <div className="col-span-3 col-start-2 row-start-2 flex flex-col gap-4 pr-16">
+        <div className="col-span-6 flex flex-col gap-4 pr-16 md:col-span-3 md:col-start-2 md:row-start-2">
           <h3 className="gap-2 text-2xl font-semibold">
             <span className="font-semibold">Wij zijn bemoeials.</span> In de
             beste zin van het woord.
@@ -32,7 +32,7 @@ const About = () => {
             Want daar ligt het echte werk.
           </p>
         </div>
-        <div className="col-span-3 col-start-5 row-start-2 flex flex-col gap-4 pr-16">
+        <div className="col-span-6 flex flex-col gap-4 pr-16 md:col-span-3 md:col-start-5 md:row-start-2">
           <h3 className="gap-2 text-2xl font-semibold">
             Developers met strategische oren
           </h3>
@@ -48,9 +48,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-4 col-start-8 row-span-2 flex flex-col justify-start">
+        <div className="col-span-6 row-span-1 flex flex-col justify-start md:col-span-4 md:col-start-8 md:row-span-2">
           <Image className="min-h-auto" src={me} alt={"A picture of Ramsey"} />
-          <p className="-translate-y-6">
+          <p className="">
             Altijd met grote ogen. Gericht op <br /> wat anderen missen
           </p>
         </div>

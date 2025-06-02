@@ -4,12 +4,12 @@ import pattern from "@/public/assets/pattern.png";
 import CtaAnimation from "./cta-animation";
 
 const Cta = () => (
-  <section className="my-20" id="cta">
+  <section className="mb-20 md:my-20" id="cta">
     <CtaAnimation />
-    <Container>
+    <Container className="">
       <div
         id="cta-card"
-        className="relative col-span-8 col-start-3 rounded-sm border-t-4 border-primary-300 bg-secondary-400"
+        className="relative col-span-8 rounded-sm border-t-4 border-primary-300 bg-secondary-400 max-md:mx-5 md:col-start-3"
       >
         <div className="relative z-10 flex flex-col gap-2 px-8 py-16">
           <h2 className="text-[36px] font-semibold leading-[1] text-white">
@@ -29,13 +29,6 @@ const Cta = () => (
               className="cta-button rounded bg-primary-300 px-4 py-2 text-white transition-colors hover:bg-primary-400"
             >
               Neem contact op
-            </a>
-            <a
-              href="/cases"
-              id="cta-button-secondary"
-              className="cta-button rounded bg-secondary-300 px-4 py-2 text-white transition-colors hover:bg-secondary-400"
-            >
-              Bekijk onze cases
             </a>
           </div>
         </div>

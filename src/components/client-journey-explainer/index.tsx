@@ -8,7 +8,7 @@ const ClientJourneyExplainer = () => {
     <div className="flex h-full w-full flex-col items-center justify-center p-4">
       <JourneyAnimation />
       <Container className="my-10 gap-y-4">
-        <div className="col-span-5 col-start-1 row-span-1 row-start-1 xl:col-span-4 xl:col-start-2">
+        <div className="col-span-6 col-start-1 row-span-1 row-start-1 md:col-span-5 xl:col-span-4 xl:col-start-2">
           <h2
             id="journey-heading"
             className="flex flex-col gap-2 text-2xl text-[26px] font-bold"
@@ -23,7 +23,7 @@ const ClientJourneyExplainer = () => {
         </div>
         <div
           id="journey-cards"
-          className="relative z-10 row-start-2 mt-16 flex justify-between gap-[72px] lg:col-span-12 lg:col-start-1 xl:col-span-10 xl:col-start-2"
+          className="relative z-10 row-start-2 flex flex-col justify-between gap-[72px] md:mt-16 md:flex-row lg:col-span-12 lg:col-start-1 xl:col-span-10 xl:col-start-2"
         >
           <JourneyCard
             title="Eén sessie. Tien inzichten."
@@ -40,10 +40,13 @@ const ClientJourneyExplainer = () => {
             title="Doorgroeien & doorbouwen"
             description="Ook na livegang blijven we aan. We monitoren, verbeteren en bouwen door waar nodig. Geen lock-in, wel duurzame impact."
             index={3}
-            className="self-end"
+            className="md:self-end"
           />
         </div>
-        <div id="big-icon" className="col-span-4 col-start-7 row-span-3 row-start-1">
+        <div
+          id="big-icon"
+          className="col-span-4 col-start-2 row-span-3 row-start-1 md:col-start-7 md:row-start-1"
+        >
           <IconLarge />
         </div>
       </Container>

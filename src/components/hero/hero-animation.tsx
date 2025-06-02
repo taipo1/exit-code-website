@@ -6,17 +6,17 @@ import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-const ScrollEffects = () => {
+const HeroAnimation = () => {
   useEffect(() => {
     // Hero fades out
     gsap.to("#hero", {
       opacity: 0,
-      y: -350,
-      ease: "power2.out",
+      y: -100,
+      ease: "power2.in",
       duration: 0.3,
       scrollTrigger: {
         trigger: "#hero",
-        start: "top top",
+        start: "top-=100 top",
         end: "bottom top",
         scrub: true,
         markers: false,
@@ -31,4 +31,4 @@ const ScrollEffects = () => {
   return null;
 };
 
-export default ScrollEffects;
+export default HeroAnimation;
