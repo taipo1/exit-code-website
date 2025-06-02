@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary-400 py-12 text-white">
       <Container className="gap-y-4">
-        <div className="col-span-3 col-start-2 row-start-1 flex flex-col items-start justify-center gap-4">
+        <div className="col-span-2 col-start-2 row-start-1 flex flex-col items-start justify-center gap-4">
           <LogoWhite className="w-full" />
         </div>
         <div className="col-span-3 col-start-2 row-start-2 flex flex-col justify-start gap-2 text-white">
@@ -18,10 +18,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="col-span-3 col-start-6 row-start-2 flex flex-col">
-            <h3 className="text-white">Voor de nieuwsgierige</h3>
-            <a href="#" className="text-md text-white">
-                nieuwsbrief
-            </a>
+          <h3 className="text-white">Voor de nieuwsgierige</h3>
+          <a href="#" className="text-md text-white">
+            nieuwsbrief
+          </a>
         </div>
         <div className="col-span-3 col-start-9 row-start-2 flex flex-col">
           <h3 className="text-white">Voor de sociale bemoeial</h3>
