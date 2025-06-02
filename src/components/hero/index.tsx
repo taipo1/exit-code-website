@@ -14,7 +14,12 @@ const Hero = () => {
         <div className="col-span-12 flex grid-cols-12 flex-col items-center justify-center gap-5 md:grid">
           <div className="row-span-3 row-start-1 flex flex-col justify-center gap-6 md:col-span-6 md:col-start-2 xl:col-span-5 xl:col-start-3">
             <h2 className="flex w-full flex-col text-left text-[28px] leading-[2.2rem] sm:text-[32px] lg:text-[40px] lg:leading-[2.8rem] xl:text-[42px]">
-              <span className="font-semibold">Genoeg mooie websites.</span>
+              <span className="font-semibold">
+                Genoeg mooie{" "}
+                <span id="hero-products">
+                  <span className="opacity-0">websites.</span>
+                </span>
+              </span>
               <span className="font-medium">Tijd voor een die werkt!</span>
             </h2>
             <p className="text-2xl">

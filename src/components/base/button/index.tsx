@@ -8,7 +8,14 @@ type Props = {
   size?: "small" | "medium" | "large";
 };
 
-const Button = ({ title, onClick, disabled, type, hiarchy }: Props) => {
+const Button = ({
+  title,
+  onClick,
+  disabled,
+  type,
+  hiarchy,
+  className,
+}: Props) => {
   const btnStyle = {
     primary: "bg-primary-300 hover:bg-primary-400 text-white",
     secondary: "bg-secondary-300 hover:bg-secondary-400 text-white",
@@ -17,7 +24,7 @@ const Button = ({ title, onClick, disabled, type, hiarchy }: Props) => {
 
   return (
     <button
-      className={`${btnStyle[hiarchy]} rounded px-4 py-2 font-bold`}
+      className={`${btnStyle[hiarchy]} rounded px-4 py-2 font-bold ${className}`}
       onClick={onClick}
       disabled={disabled}
       type={type}

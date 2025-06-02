@@ -8,6 +8,29 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const HeroAnimation = () => {
   useEffect(() => {
+    const words = [
+      "websites.",
+      "",
+      "webapps.",
+      "",
+      "tools.",
+      "",
+      "dashboards.",
+      "",
+    ];
+    const el = "#hero-products";
+
+    const tlHero = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+    words.forEach((word) => {
+      tlHero.to(el, {
+        text: word,
+        duration: 0.5,
+        delay: word === "" ? 1.5 : 0,
+        ease: "none",
+      });
+    });
+
     // Hero fades out
     gsap.to("#hero", {
       opacity: 0,
