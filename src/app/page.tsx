@@ -17,8 +17,8 @@ export default function Home() {
       </div>
       <div className="h-[800px]" />
       <Cases />
-      <ClientJourneyExplainer />
       <Cta />
+      <ClientJourneyExplainer />
       <About />
     </div>
   );

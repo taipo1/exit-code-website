@@ -33,7 +33,7 @@ const Cta = () => (
           </div>
         </div>
         <div className="absolute top-0 z-0 h-full w-full overflow-hidden">
-          <div className="absolute inset-0 z-10 bg-gradient-to-r from-secondary-400 to-secondary-300 opacity-85"></div>
+          <div className="absolute inset-0 z-10 bg-gradient-to-r from-secondary-400 to-secondary-300 opacity-60"></div>
           <Image
             className="z-0 min-w-full translate-x-4 translate-y-4 scale-125"
             src={pattern}

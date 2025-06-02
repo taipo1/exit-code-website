@@ -47,6 +47,7 @@ const CtaAnimation = () => {
         start: "center center",
         end: "bottom top",
         scrub: true,
+        markers: true,
       },
     });
 
