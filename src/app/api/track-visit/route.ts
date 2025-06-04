@@ -12,8 +12,11 @@ export async function POST(req: NextRequest) {
   const referer = req.headers.get("referer");
   const userAgent = req.headers.get("user-agent");
   const screen = body?.screen || null;
+  const utmSource = body?.utmSource || null;
+  const utmMedium = body?.utmMedium || null;
+  const utmCampaign = body?.utmCampaign || null;
 
-  if (process.env.IS_PRODUCTION === "true") {
+  if (process.env.IS_PRODUCTION === "false") {
     try {
       await sanityClient.create({
         _type: "visit",
@@ -21,6 +24,9 @@ export async function POST(req: NextRequest) {
         referrer: referer || null,
         userAgent: Array.isArray(userAgent) ? userAgent[0] : userAgent || null,
         screen,
+        utmSource,
+        utmMedium,
+        utmCampaign,
       });
 
       return new Response(JSON.stringify({ ok: true }), {
