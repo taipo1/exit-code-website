@@ -8,7 +8,10 @@ const ClientJourneyExplainer = () => {
     <div className="flex h-full w-full flex-col items-center justify-center p-4">
       <JourneyAnimation />
       <Container className="my-10 gap-y-4">
-        <div className="col-span-6 col-start-1 row-span-1 row-start-1 md:col-span-5 xl:col-span-4 xl:col-start-2">
+        <div
+          id="journey-intro"
+          className="col-span-6 col-start-1 row-span-1 row-start-1 md:col-span-5 xl:col-span-4 xl:col-start-2"
+        >
           <h2
             id="journey-heading"
             className="flex flex-col gap-2 text-2xl text-[26px] font-bold"

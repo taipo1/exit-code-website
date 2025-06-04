@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../base/button";
+import { postVisit } from "@/utils/post-visit";
 
 const ContactButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,12 @@ const ContactButton = () => {
     setIsOpen(false);
     document.body.style.overflow = "auto";
   };
+
+  // This is only here because its the only client component in the repo
+  useEffect(() => {
+    const screen = `${window.innerWidth}x${window.innerHeight}`;
+    postVisit(screen);
+  }, []);
 
   return (
     <>

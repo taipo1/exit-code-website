@@ -208,7 +208,7 @@ const JourneyAnimation = () => {
               each: 0.15,
               from: "end", // 👈 reverse order
             },
-            duration: 0.4,
+            duration: 0.6,
             ease: "power2.inOut",
           },
           "<+0.1",
