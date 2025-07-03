@@ -10,7 +10,7 @@ const ClientJourneyExplainer = () => {
       <Container className="my-10 gap-y-4">
         <div
           id="journey-intro"
-          className="col-span-6 col-start-1 row-span-1 row-start-1 md:col-span-5 xl:col-span-4 xl:col-start-2"
+          className="relative z-10 col-span-6 col-start-1 row-span-1 row-start-1 md:col-span-5 xl:col-span-4 xl:col-start-2"
         >
           <h2
             id="journey-heading"
@@ -26,7 +26,7 @@ const ClientJourneyExplainer = () => {
         </div>
         <div
           id="journey-cards"
-          className="relative z-10 row-start-2 flex flex-col justify-between gap-[72px] md:mt-16 md:flex-row lg:col-span-12 lg:col-start-1 xl:col-span-10 xl:col-start-2"
+          className="relative z-10 col-span-full row-start-2 flex flex-col justify-between gap-[72px] md:mt-16 md:flex-row lg:col-span-12 lg:col-start-1 xl:col-span-10 xl:col-start-2"
         >
           <JourneyCard
             title="Eén sessie. Tien inzichten."
@@ -48,7 +48,7 @@ const ClientJourneyExplainer = () => {
         </div>
         <div
           id="big-icon"
-          className="col-span-4 col-start-7 row-span-3 row-start-1"
+          className="relative z-0 col-span-4 col-start-2 row-span-3 row-start-1 md:col-start-7 md:row-start-1"
         >
           <IconLarge />
         </div>

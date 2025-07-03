@@ -1,7 +1,6 @@
 import Container from "@/components/base/container";
-import Oermens from "@/public/assets/oermens_raw.jpg";
-import BaseImage from "@/components/base/base-image";
 import MissionAnimation from "./mission-animation";
+import EvolutionAnimation from "./evolution-animation";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const translate = "-translate-y-2 -translate-y-4 -translate-y-6";
@@ -10,14 +9,14 @@ const Mission = () => {
   return (
     <section
       id="mission"
-      className="relative flex flex-col items-center justify-start bg-white opacity-0"
+      className="relative flex w-full flex-col items-center justify-start bg-white opacity-0"
     >
       <MissionAnimation />
-      <Container className={"my-12 grid-rows-6 gap-y-2 max-md:grid-rows-3"}>
-        <div className="col-span-6 row-span-1 row-start-1 flex justify-center md:col-start-2 md:row-span-6">
-          <BaseImage src={Oermens} alt={"A picture of Ramsey"} />
+      <Container className={"grid-rows-4 gap-y-2 md:my-12 md:grid-rows-2"}>
+        <div className="col-span-full row-span-1 row-start-1 flex justify-start md:col-span-6 md:col-start-2 md:pr-12 xl:row-span-2">
+          <EvolutionAnimation />
         </div>
-        <div className="col-span-6 flex flex-col gap-4 max-md:row-span-2 md:col-span-4 md:col-start-8">
+        <div className="col-span-6 row-span-3 flex flex-col gap-4 md:col-span-4 md:col-start-8 md:row-span-full">
           <h2
             id="mission-title"
             className="text-[26px] font-medium leading-none opacity-0"

@@ -15,7 +15,7 @@ const HeroAnimation = () => {
       "",
       "tools.",
       "",
-      "dashboards.",
+      "platforms.",
       "",
     ];
     const el = "#hero-products";

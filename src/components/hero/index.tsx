@@ -23,8 +23,8 @@ const Hero = () => {
               <span className="font-medium">Tijd voor een die werkt!</span>
             </h2>
             <p className="text-2xl">
-              Gericht bouwt digitale tools die eruitzien als een website — maar
-              draaien als een motor. Voor ondernemers die vooruit willen.
+              Gericht bouwt digitale oplossingen die eruitzien als een website,
+              en draaien als een motor. Voor ondernemers die vooruit willen.
             </p>
             <BaseLink
               href="/contact"

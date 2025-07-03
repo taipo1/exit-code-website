@@ -17,6 +17,8 @@
 		"next-sanity": "^9.12.0",
 		"react": "^18",
 		"react-dom": "^18",
+		"react-hook-form": "^7.59.0",
+		"resend": "^4.6.0",
 		"tailwind-merge": "^3.3.0"
 	},
 	"devDependencies": {

@@ -1,7 +1,7 @@
 import Hero from "@/components/hero";
 import Mission from "@/components/mission";
 import ClientJourneyExplainer from "@/components/client-journey-explainer";
-import Cases from "@/components/cases";
+// import Cases from "@/components/cases";
 import About from "@/components/about";
 import Cta from "@/components/cta";
 
@@ -16,7 +16,6 @@ export default function Home() {
         <Mission />
       </div>
       <div className="h-[800px]" />
-      <Cases />
       <Cta />
       <ClientJourneyExplainer />
       <About />

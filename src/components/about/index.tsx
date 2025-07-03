@@ -5,17 +5,17 @@ import me from "@/public/assets/me.jpg";
 const About = () => {
   return (
     <section id="about">
-      <Container className="grid-rows-auto">
-        <div className="col-span-6 mb-4 flex flex-col gap-2 md:col-span-5 md:col-start-2 md:row-start-1">
-          <h2 className="text-[48px] font-semibold leading-[.8]">
+      <Container className="grid-rows-auto gap-4">
+        <div className="col-span-6 mb-4 flex flex-col gap-2 xl:col-span-5 xl:col-start-2 xl:row-start-1">
+          <h2 className="text-[32px] font-semibold leading-[.9] md:text-[48px] md:leading-[.8]">
             Bemoeial in beeld
           </h2>
           <p className="font-semibold text-primary-300">
             Wat gericht anders maakt
           </p>
         </div>
-        <div className="col-span-6 flex flex-col gap-4 pr-16 md:col-span-3 md:col-start-2 md:row-start-2">
-          <h3 className="gap-2 text-2xl font-semibold">
+        <div className="col-span-6 flex flex-col gap-2 md:gap-4 lg:col-span-4 lg:col-start-1 lg:row-start-2 lg:pr-8 xl:col-span-3 xl:col-start-2 xl:pr-16">
+          <h3 className="gap-2 text-lg font-semibold md:text-2xl">
             <span className="font-semibold">Wij zijn bemoeials.</span> In de
             beste zin van het woord.
           </h3>
@@ -32,8 +32,8 @@ const About = () => {
             Want daar ligt het echte werk.
           </p>
         </div>
-        <div className="col-span-6 flex flex-col gap-4 pr-16 md:col-span-3 md:col-start-5 md:row-start-2">
-          <h3 className="gap-2 text-2xl font-semibold">
+        <div className="col-span-6 row-start-2 flex flex-col gap-2 lg:col-span-4 lg:col-start-5 xl:col-span-3 xl:col-start-5 xl:gap-4 xl:pr-16">
+          <h3 className="text-lg font-semibold md:text-2xl">
             Developers met strategische oren
           </h3>
           <div className="flex h-full flex-col justify-between gap-2">
@@ -43,18 +43,18 @@ const About = () => {
               Daarom bouwen we niets wat losstaat van de rest.
             </p>
             <p className="border-l-2 border-primary-300 border-opacity-50 pl-2">
-              Geen agency-vibe, geen klantenshow. Gewoon samenwerken. Kort op de
+              Geen agency vibe, geen klantenshow. Gewoon samenwerken. Kort op de
               bal. Zodat je sneller kunt verbeteren, en slimmer kunt groeien.
             </p>
           </div>
         </div>
-        <div className="col-span-4 col-start-8 row-span-2 flex flex-col justify-start">
+        <div className="col-span-6 row-span-1 flex flex-col justify-start md:col-span-4 lg:col-span-4 lg:col-start-9 lg:row-span-2 xl:col-start-8 xl:row-span-2">
           <Image
-            className="min-h-auto overflow-hidden rounded-[4px]"
+            className="min-h-auto max-h-fit max-w-fit"
             src={me}
             alt={"A picture of Ramsey"}
           />
-          <p className="-translate-y-6">
+          <p className="mt-2">
             Altijd met grote ogen. Gericht op <br /> wat anderen missen
           </p>
         </div>
