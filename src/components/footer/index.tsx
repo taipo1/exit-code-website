@@ -10,11 +10,11 @@ const Footer = () => {
         </div>
         <div className="col-span-12 row-start-2 flex flex-col justify-start gap-2 text-white md:col-span-3 md:col-start-2">
           <p className="text-md text-left text-white">
-            Gericht is een technische eenmanszaak met strategisch verstand. Geen
-            agency. Geen ego. Wel resultaat.
+            Eén maker, één aanspreekpunt, korte lijnen. Gericht helpt je
+            systemen versimpelen, versnellen en slimmer maken.
           </p>
           <p className="text-md text-left text-white">
-            KvK 12345678 — Btw NL123456789B01 Singravenhof 80, Arnhem
+            KvK 95373152, Btw: NL005149286B92 Singravenhof 80, Arnhem
           </p>
         </div>
         <div className="col-span-12 col-start-1 flex flex-col md:col-span-3 md:col-start-6 md:row-start-2">
