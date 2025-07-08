@@ -9,13 +9,7 @@ export default function Home() {
   return (
     <div className="mb-20">
       <Hero />
-      <div
-        id="mission-wrapper"
-        className="flex min-h-fit items-center justify-center"
-      >
-        <Mission />
-      </div>
-      <div className="h-[600px]" />
+      <Mission />
       {/* get some cases bitch */}
       {/* <Cases /> */}
       <ClientJourneyExplainer />

@@ -5,7 +5,7 @@ import IconLarge from "@/svg/icon-large";
 
 const ClientJourneyExplainer = () => {
   return (
-    <div className="my-24 flex h-full w-full flex-col items-center justify-center p-4">
+    <div className="mb-24 flex h-full w-full flex-col items-center justify-center p-4">
       <JourneyAnimation />
       <Container className="my-10 gap-y-4">
         <div
@@ -50,7 +50,7 @@ const ClientJourneyExplainer = () => {
           id="big-icon"
           className="relative z-0 col-span-4 col-start-2 row-span-3 row-start-1 md:col-start-7 md:row-start-1"
         >
-          <IconLarge />
+          <IconLarge className="scale-80 -translate-y-20 justify-end lg:-translate-y-0 lg:scale-100" />
         </div>
       </Container>
     </div>

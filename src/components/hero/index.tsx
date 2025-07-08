@@ -6,7 +6,7 @@ import HeroAnimation from "./hero-animation";
 const Hero = () => {
   return (
     <section
-      className="flex min-h-[80vh] w-full items-end justify-center md:min-h-[60vh]"
+      className="flex min-h-[70vh] w-full items-center justify-center md:min-h-[90vh]"
       id="hero"
     >
       <HeroAnimation />
