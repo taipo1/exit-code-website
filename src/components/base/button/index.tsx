@@ -17,9 +17,12 @@ const Button = ({
   className,
 }: Props) => {
   const btnStyle = {
-    primary: "bg-primary-300 hover:bg-primary-400 text-white",
-    secondary: "bg-secondary-300 hover:bg-secondary-400 text-white",
-    tertiary: "bg-tertiary-300 hover:bg-tertiary-400 text-white",
+    primary:
+      "bg-primary-300 hover:bg-primary-400 text-white disabled:opacity-80",
+    secondary:
+      "bg-secondary-300 hover:bg-secondary-400 text-white disabled:bg-secondary-200",
+    tertiary:
+      "bg-tertiary-300 hover:bg-tertiary-400 text-white disabled:bg-tertiary-200",
   };
 
   return (

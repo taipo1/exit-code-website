@@ -1,9 +1,9 @@
 import Hero from "@/components/hero";
 import Mission from "@/components/mission";
 import ClientJourneyExplainer from "@/components/client-journey-explainer";
-// import Cases from "@/components/cases";
 import About from "@/components/about";
 import Cta from "@/components/cta";
+// import Cases from "@/components/cases";
 
 export default function Home() {
   return (
@@ -15,9 +15,11 @@ export default function Home() {
       >
         <Mission />
       </div>
-      <div className="h-[800px]" />
-      <Cta />
+      <div className="h-[600px]" />
+      {/* get some cases bitch */}
+      {/* <Cases /> */}
       <ClientJourneyExplainer />
+      <Cta />
       <About />
     </div>
   );

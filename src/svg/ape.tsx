@@ -1,6 +1,7 @@
-const Ape = ({ className }: { className?: string }) => {
+const Ape = ({ className, id }: { className?: string; id?: string }) => {
   return (
     <svg
+      id={id}
       className={`${className}`}
       width="93"
       height="115"

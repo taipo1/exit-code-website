@@ -18,6 +18,7 @@ const CasesAnimation = () => {
         stagger: 0.2,
         ease: "power2.out",
         scrollTrigger: {
+          once: true,
           trigger: "#cases",
           start: "top+=200 80%",
           toggleActions: "play none none none",
@@ -39,6 +40,7 @@ const CasesAnimation = () => {
         ease: "power2.out",
         delay: 2.2, // Sync with stagger
         scrollTrigger: {
+          once: true,
           trigger: "#cases",
           start: "top 80%",
           toggleActions: "play none none none",

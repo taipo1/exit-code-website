@@ -52,7 +52,7 @@ const JourneyAnimation = () => {
             delay: 0.3,
             scrollTrigger: {
               trigger: "#journey-cards",
-              start: "bottom 85%",
+              start: "bottom 100%",
               toggleActions: "play none none none",
             },
           },
@@ -72,7 +72,7 @@ const JourneyAnimation = () => {
             },
             scrollTrigger: {
               trigger: "#journey-cards",
-              start: "bottom 80%",
+              start: "bottom 105%",
               toggleActions: "play none none none",
             },
           },
@@ -149,87 +149,6 @@ const JourneyAnimation = () => {
         );
 
         // Skip animating icon on mobile for speed
-      },
-    });
-
-    ScrollTrigger.matchMedia({
-      "(min-width: 768px)": function () {
-        // Existing entry animations...
-
-        // Exit timeline
-        const tlJourneyExit = gsap.timeline({
-          scrollTrigger: {
-            trigger: "#journey-cards",
-            start: "center center",
-            end: "bottom top",
-            scrub: true,
-          },
-        });
-
-        // Heading fades out
-        tlJourneyExit.to("#journey-heading", {
-          opacity: 0,
-          y: 30,
-          duration: 0.4,
-          ease: "power2.inOut",
-        });
-
-        // Subtext fades out
-        tlJourneyExit.to(
-          "#journey-subtext",
-          {
-            opacity: 0,
-            y: 20,
-            duration: 0.3,
-            ease: "power2.inOut",
-          },
-          "<+0.1",
-        );
-
-        tlJourneyExit.to(
-          "#big-icon",
-          {
-            opacity: 0,
-            y: 20,
-            scale: 0.95,
-            duration: 0.4,
-            ease: "power2.inOut",
-          },
-          "<+0.2",
-        );
-
-        // Cards fade out in reverse stagger
-        tlJourneyExit.to(
-          ".journey-card",
-          {
-            opacity: 0,
-            y: -20,
-            stagger: {
-              each: 0.15,
-              from: "end", // 👈 reverse order
-            },
-            duration: 0.6,
-            ease: "power2.inOut",
-          },
-          "<+0.1",
-        );
-
-        // Icon fades + scales out
-        tlJourneyExit.to(
-          "#journey-icon",
-          {
-            opacity: 0,
-            scale: 0.95,
-            duration: 0.4,
-            ease: "power2.inOut",
-          },
-          "<+0.2",
-        );
-      },
-
-      // Optional: mobile cleanup
-      "(max-width: 767px)": function () {
-        // Skip exit animation for performance, or copy desktop version with simpler values
       },
     });
   }, []);

@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import TextInput from "./inputs/text";
 import TextArea from "./inputs/text-area";
 import { FieldValues } from "react-hook-form";
+import Button from "../base/button";
+import { useState } from "react";
 
 export type FormData = {
   email: string;
@@ -14,7 +16,15 @@ export type FormData = {
 };
 
 const Form = () => {
-  const { handleSubmit, register, setValue } = useForm<FormData>({
+  const [submitted, setSubmitted] = useState(false);
+  const {
+    handleSubmit,
+    register,
+    setValue,
+    setError,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({
     defaultValues: {
       email: "",
       message: "",
@@ -25,53 +35,103 @@ const Form = () => {
   });
 
   const onSubmit = async (data: FieldValues) => {
-    console.log("Form submitted:", data);
-    await fetch("/api/send-form", {
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const response = await fetch("/api/send-form", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
+
+    const result = await response.json();
+    if (result.error) {
+      console.log("if error ");
+      setError("root", {
+        message: result.error,
+      });
+    } else {
+      setSubmitted(true);
+      reset();
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-      <TextInput
-        id="name"
-        label="Name"
-        onChange={setValue}
-        register={register}
-      />
-      <TextInput
-        id="email"
-        label="Email"
-        onChange={setValue}
-        register={register}
-      />
-      <TextInput
-        id="number"
-        label="Telefoon"
-        onChange={setValue}
-        register={register}
-      />
-      <TextInput
-        id="subject"
-        label="Onderwerp"
-        onChange={setValue}
-        register={register}
-      />
-      <TextArea
-        id="message"
-        label="Message"
-        onChange={setValue}
-        register={register}
-      />
-      <button
-        type="submit"
-        className="bg-primary-500 hover:bg-primary-600 w-full rounded-[4px] px-4 py-2 text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300"
-      >
-        Submit
-      </button>
-    </form>
+    <>
+      {submitted ? (
+        <div className="flex flex-col items-center justify-center">
+          <p className="text-green-500">Bedankt voor je bericht!</p>
+        </div>
+      ) : (
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-4 md:w-[480px]"
+        >
+          <TextInput
+            id="name"
+            label="Name"
+            validation={{
+              required: "Laat even weten wie je bent",
+            }}
+            error={errors.name?.message || undefined}
+            onChange={setValue}
+            register={register}
+          />
+          <TextInput
+            id="email"
+            label="Email"
+            validation={{
+              required: "Email is verplicht",
+              pattern: {
+                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: "Voer een geldig e-mailadres in",
+              },
+            }}
+            error={errors.email?.message || undefined}
+            onChange={setValue}
+            register={register}
+          />
+          <TextInput
+            id="number"
+            label="Telefoon"
+            validation={{
+              required: "Bellen is sneller",
+            }}
+            error={errors.number?.message || undefined}
+            onChange={setValue}
+            register={register}
+          />
+          <TextInput
+            id="subject"
+            label="Onderwerp"
+            validation={{
+              required: "Onderwerp is verplicht",
+            }}
+            error={errors.subject?.message || undefined}
+            onChange={setValue}
+            register={register}
+          />
+          <TextArea
+            id="message"
+            label="Boodschap"
+            onChange={setValue}
+            register={register}
+          />
+          <Button
+            hiarchy="primary"
+            title="Verstuur"
+            type="submit"
+            className="w-full"
+            disabled={isSubmitting}
+          />
+
+          {errors.root && (
+            <p className="mt-2 text-sm text-red-200">
+              {errors.root.message ||
+                "Er ging iets mis, probeer het later opnieuw."}
+            </p>
+          )}
+        </form>
+      )}
+    </>
   );
 };
 

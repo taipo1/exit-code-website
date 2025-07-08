@@ -15,15 +15,22 @@ const TextArea = ({ id, label, onChange, register }: Props) => {
   const [isFocused, setIsFocused] = useState(false);
   return (
     <div className="flex flex-col gap-2">
-      <InputLabel id={id} label={label} isFocused={isFocused} />
+      <InputLabel
+        gifLink={
+          "https://media1.tenor.com/m/GFVmeemwP9UAAAAd/boodschap-3fm.gif"
+        }
+        id={id}
+        label={label}
+        isFocused={isFocused}
+      />
       <textarea
         id={id}
         {...register(id, { required: "Met wie?!?" })}
-        placeholder="Enter text here"
+        placeholder=""
         onChange={(e) => onChange(id, e.target.value)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        className={`w-full rounded-[4px] border border-white bg-transparent px-4 py-2 text-white transition-colors duration-200 placeholder:text-white focus:border-primary-400 focus:outline-none focus:ring-0`}
+        className={`min-h-[150px] w-full rounded-[4px] border border-white bg-transparent px-4 py-2 text-white transition-colors duration-200 placeholder:text-white focus:border-primary-400 focus:outline-none focus:ring-0`}
       />
     </div>
   );

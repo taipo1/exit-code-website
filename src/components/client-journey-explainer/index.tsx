@@ -5,7 +5,7 @@ import IconLarge from "@/svg/icon-large";
 
 const ClientJourneyExplainer = () => {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center p-4">
+    <div className="my-24 flex h-full w-full flex-col items-center justify-center p-4">
       <JourneyAnimation />
       <Container className="my-10 gap-y-4">
         <div
@@ -14,7 +14,7 @@ const ClientJourneyExplainer = () => {
         >
           <h2
             id="journey-heading"
-            className="flex flex-col gap-2 text-2xl text-[26px] font-bold"
+            className="flex flex-col gap-2 text-2xl text-[26px] font-bold leading-[.9]"
           >
             <span>Wat we doen</span>{" "}
             <span>als we ons ergens mee bemoeien.</span>

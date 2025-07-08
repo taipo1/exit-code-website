@@ -39,39 +39,6 @@ const CtaAnimation = () => {
         },
       },
     );
-
-    // 🧨 Fade-out on scroll past
-    const tlCtaExit = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#cta",
-        start: "center center",
-        end: "bottom top",
-        scrub: true,
-        markers: true,
-      },
-    });
-
-    tlCtaExit.to("#cta-card", {
-      opacity: 0,
-      y: -50,
-      duration: 0.5,
-      ease: "power2.inOut",
-    });
-
-    tlCtaExit.to(
-      ".cta-button",
-      {
-        opacity: 0,
-        scale: 0.95,
-        duration: 0.3,
-        ease: "power2.inOut",
-        stagger: {
-          each: 0.1,
-          from: "end",
-        },
-      },
-      "<+0.1", // slightly after card fade
-    );
   }, []);
 
   return null;

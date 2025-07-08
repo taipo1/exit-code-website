@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+const apeIds = ["#ape-1", "#ape-2", "#ape-3", "#ape-4"];
+
 const MissionAnimation = () => {
   useEffect(() => {
     let hasRun = false; // <-- guard to prevent multiple executions
@@ -21,7 +23,7 @@ const MissionAnimation = () => {
     tlMission.fromTo(
       "#mission",
       { opacity: 0, y: 100 },
-      { opacity: 1, y: -200, duration: 0.5, ease: "power2.out" },
+      { opacity: 1, y: -200, duration: 0.7, ease: "power2.out" },
     );
 
     tlMission.call(
@@ -46,7 +48,6 @@ const MissionAnimation = () => {
           },
           ">-0.2",
         );
-
         tlMissionEntry.fromTo(
           ".mission-description",
           { opacity: 0, x: 5 },
@@ -63,6 +64,14 @@ const MissionAnimation = () => {
       undefined,
       "-=0.5",
     );
+
+    apeIds.forEach((selector) => {
+      tlMission.fromTo(
+        selector,
+        { opacity: 0 },
+        { opacity: 1, duration: 0.2, ease: "power2.out" },
+      );
+    });
 
     // STEP 3: Fade out entire section
     tlMission.to("#mission", {

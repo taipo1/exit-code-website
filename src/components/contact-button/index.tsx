@@ -27,7 +27,7 @@ const ContactButton = () => {
       <Button
         onClick={handleOpen}
         type="button"
-        title="Start!"
+        title="Contact"
         hiarchy="primary"
         className="max-h-fit shrink"
       />
@@ -37,7 +37,7 @@ const ContactButton = () => {
             onClick={handleClose}
             className="absolute bottom-0 left-0 right-0 top-0 z-0 h-screen w-screen bg-secondary-300/60 backdrop-blur-[2px]"
           />
-          <div className="relative z-30 rounded-lg bg-secondary-300 p-12 text-white">
+          <div className="relative z-30 max-h-fit rounded-lg bg-secondary-300 p-12 text-white transition-all">
             <h2 className="text-white">Praten is gratis</h2>
             <p className="text-white">
               Als je vragen hebt, neem gerust contact op!

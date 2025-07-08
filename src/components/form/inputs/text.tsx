@@ -4,15 +4,31 @@ import { useState } from "react";
 import InputLabel from "./input-label";
 import { UseFormRegister, UseFormSetValue } from "react-hook-form";
 import { FormData } from "..";
+import InputError from "./input-error";
 type Props = {
   id: keyof FormData;
   label: string;
   // placeholder?: string;
+  validation?: {
+    required?: string;
+    pattern?: {
+      value: RegExp;
+      message: string;
+    };
+  };
+  error?: string | undefined;
   onChange: UseFormSetValue<FormData>;
   register: UseFormRegister<FormData>;
 };
 
-const TextInput = ({ id, label, onChange, register }: Props) => {
+const TextInput = ({
+  id,
+  label,
+  onChange,
+  register,
+  validation,
+  error,
+}: Props) => {
   const [isFocused, setIsFocused] = useState(false);
   return (
     <div className="flex flex-col gap-2">
@@ -20,12 +36,13 @@ const TextInput = ({ id, label, onChange, register }: Props) => {
       <input
         type="text"
         id={id}
-        {...register(id, { required: "Met wie?!?" })}
+        {...register(id, validation)}
         onChange={(e) => onChange(id, e.target.value)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        className={`w-full rounded-[4px] border ${isFocused ? "border-primary-400" : "border-white"} s bg-transparent px-4 py-2 text-white transition-colors duration-200 placeholder:text-white focus:border-primary-300 focus:outline-none focus:ring-0`}
+        className={`w-full rounded-[4px] border bg-transparent px-4 py-2 text-white/80 transition-colors duration-200 placeholder:text-white/90 focus:border-primary-300 focus:outline-none focus:ring-0`}
       />
+      {error && <InputError error={error} />}
     </div>
   );
 };

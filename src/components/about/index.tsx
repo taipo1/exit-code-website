@@ -4,7 +4,7 @@ import me from "@/public/assets/me.jpg";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="my-24">
       <Container className="grid-rows-auto gap-4">
         <div className="col-span-6 mb-4 flex flex-col gap-2 xl:col-span-5 xl:col-start-2 xl:row-start-1">
           <h2 className="text-[32px] font-semibold leading-[.9] md:text-[48px] md:leading-[.8]">
@@ -20,13 +20,15 @@ const About = () => {
             beste zin van het woord.
           </h3>
 
-          <p className="mb-2 border-l-2 border-primary-300 border-opacity-50 pl-2">
+          <p className="relative mb-2 pl-3">
+            <span className="absolute left-0 top-2 h-[90%] w-[2px] bg-primary-300/50" />
             individualisten die de handen in een slaan gericht is gebouwd op
             nieuwsgierigheid. We willen weten hoe je werkt. Waar het piept. Waar
             je kansen laat liggen. Niet om te oordelen, maar om te bouwen wat er
             écht nodig is.
           </p>
-          <p className="border-l-2 border-primary-300 border-opacity-50 pl-2">
+          <p className="relative pl-3">
+            <span className="absolute left-0 top-2 h-[88%] w-[2px] bg-primary-300/50" />
             We komen niet binnen met een gelikt voorstel. We stellen vragen.
             Dieper dan je gewend bent. Over je processen, je klanten, je doelen.
             Want daar ligt het echte werk.
@@ -37,12 +39,14 @@ const About = () => {
             Developers met strategische oren
           </h3>
           <div className="flex h-full flex-col justify-between gap-2">
-            <p className="mb-2 border-l-2 border-primary-300 border-opacity-50 pl-2">
+            <p className="relative mb-2 pl-3">
+              <span className="absolute left-0 top-2 h-[88%] w-[2px] bg-primary-300/50" />
               We begrijpen code, maar ook context. We zien je website niet als
               een eindproduct, maar als een onderdeel van je bedrijfsmotor.
               Daarom bouwen we niets wat losstaat van de rest.
             </p>
-            <p className="border-l-2 border-primary-300 border-opacity-50 pl-2">
+            <p className="relative pl-3">
+              <span className="absolute left-0 top-2 h-[88%] w-[2px] bg-primary-300/50" />
               Geen agency vibe, geen klantenshow. Gewoon samenwerken. Kort op de
               bal. Zodat je sneller kunt verbeteren, en slimmer kunt groeien.
             </p>
@@ -55,7 +59,7 @@ const About = () => {
             alt={"A picture of Ramsey"}
           />
           <p className="mt-2">
-            Altijd met grote ogen. Gericht op <br /> wat anderen missen
+            Altijd met grote ogen, gericht op <br /> wat anderen missen
           </p>
         </div>
       </Container>

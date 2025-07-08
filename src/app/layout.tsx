@@ -11,7 +11,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Gericht",
+  title:
+    "Van knelpunt naar krachtpatser | gericht – Digitale oplossingen die werken",
   description: "opzoek naar oplossingen",
 };
 
@@ -21,12 +22,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${dmSans.variable} max-w-full antialiased`}>
-        <Navigation />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Gericht.nl" />
+      </head>
+      <html lang="en">
+        <body className={`${dmSans.variable} max-w-full antialiased`}>
+          <Navigation />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }
