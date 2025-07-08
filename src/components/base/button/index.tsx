@@ -1,11 +1,13 @@
 type Props = {
-  title: string;
+  title?: string;
   onClick?(): void;
   disabled?: boolean;
   type: "button" | "submit" | "reset";
   className?: string;
-  hiarchy: "primary" | "secondary" | "tertiary";
+  hiarchy: "primary" | "secondary" | "tertiary" | "custom";
   size?: "small" | "medium" | "large";
+  children?: React.ReactNode;
+  ariaLabel: string;
 };
 
 const Button = ({
@@ -15,6 +17,8 @@ const Button = ({
   type,
   hiarchy,
   className,
+  children,
+  ariaLabel,
 }: Props) => {
   const btnStyle = {
     primary:
@@ -23,16 +27,18 @@ const Button = ({
       "bg-secondary-300 hover:bg-secondary-400 text-white disabled:bg-secondary-200",
     tertiary:
       "bg-tertiary-300 hover:bg-tertiary-400 text-white disabled:bg-tertiary-200",
+    custom: "",
   };
 
   return (
     <button
-      className={`${btnStyle[hiarchy]} rounded px-4 py-2 font-bold ${className}`}
+      className={`${btnStyle[hiarchy]} ${hiarchy === "custom" ? "" : "rounded px-4 py-2 font-bold"} ${className}`}
       onClick={onClick}
       disabled={disabled}
       type={type}
+      aria-label={ariaLabel}
     >
-      {title}
+      {children || title}
     </button>
   );
 };

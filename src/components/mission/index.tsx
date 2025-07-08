@@ -23,7 +23,7 @@ const Mission = () => {
           <div className="col-span-6 row-span-3 flex flex-col gap-4 md:col-span-4 md:col-start-8 md:row-span-full">
             <h2
               id="mission-title"
-              className="mt-4 md:mt-0 text-2xl font-semibold leading-none opacity-0 md:text-[26px]"
+              className="mt-4 text-2xl font-semibold leading-none opacity-0 md:mt-0 md:text-[26px]"
             >
               Van knelpunt naar{" "}
               <span

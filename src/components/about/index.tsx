@@ -10,7 +10,7 @@ const About = () => {
           <h2 className="text-[32px] font-semibold leading-[.9] md:text-[48px] md:leading-[.8]">
             Bemoeial in beeld
           </h2>
-          <p className="font-semibold text-primary-300">
+          <p className="text-lg font-semibold text-primary-300">
             Wat gericht anders maakt
           </p>
         </div>

@@ -120,6 +120,7 @@ const Form = () => {
             title="Verstuur"
             type="submit"
             className="w-full"
+            ariaLabel="Verstuur formulier"
             disabled={isSubmitting}
           />
 

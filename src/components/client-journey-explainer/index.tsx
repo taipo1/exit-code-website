@@ -5,7 +5,7 @@ import IconLarge from "@/svg/icon-large";
 
 const ClientJourneyExplainer = () => {
   return (
-    <div className="mb-24 flex h-full w-full flex-col items-center justify-center p-4">
+    <div className="flex h-full w-full flex-col items-center justify-center p-4 md:mb-24">
       <JourneyAnimation />
       <Container className="my-10 gap-y-4">
         <div
