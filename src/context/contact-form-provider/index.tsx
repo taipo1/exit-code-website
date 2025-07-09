@@ -55,14 +55,6 @@ export const ContactFormProvider: React.FC<ContactFormProviderProps> = ({
             >
               <Close className="transition-colors hover:text-primary-400 group-focus:text-primary-400" />
             </Button>
-            <div className="gap mb-2 flex flex-col">
-              <h3 className="text-2xl font-bold text-primary-400">
-                Digitaal vastgelopen?
-              </h3>
-              <p className="text-white">
-                Stuur een bericht en we zetten het weer in beweging.
-              </p>
-            </div>
             <Form />
           </div>
         </div>

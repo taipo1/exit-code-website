@@ -24,7 +24,7 @@ const Cta = () => (
             We prikken snel door je processen heen...
           </p>
           <div className="flex gap-2">
-            <ContactButton label="Neem contact op!" />
+            <ContactButton className="cta-button" label="Neem contact op!" />
           </div>
         </div>
         <div className="top-0 z-0 hidden h-full w-full overflow-hidden md:absolute">

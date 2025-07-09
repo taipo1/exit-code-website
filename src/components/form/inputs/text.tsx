@@ -37,9 +37,13 @@ const TextInput = ({
         type="text"
         id={id}
         {...register(id, validation)}
-        onChange={(e) => onChange(id, e.target.value)}
+        onChange={(e) => {
+          onChange(id, e.target.value);
+        }}
         onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)}
+        onBlur={() => {
+          setIsFocused(false);
+        }}
         className={`w-full rounded-[4px] border border-white/80 bg-transparent px-4 py-2 text-white/80 transition-colors duration-200 placeholder:text-white/90 focus:border-primary-300 focus:outline-none focus:ring-0`}
       />
       {error && <InputError error={error} />}

@@ -8,6 +8,7 @@ type Props = {
   size?: "small" | "medium" | "large";
   children?: React.ReactNode;
   ariaLabel: string;
+  id?: string;
 };
 
 const Button = ({
@@ -19,6 +20,7 @@ const Button = ({
   className,
   children,
   ariaLabel,
+  id,
 }: Props) => {
   const btnStyle = {
     primary:
@@ -32,6 +34,7 @@ const Button = ({
 
   return (
     <button
+      id={id}
       className={`${btnStyle[hiarchy]} ${hiarchy === "custom" ? "" : "rounded px-4 py-2 font-bold"} ${className}`}
       onClick={onClick}
       disabled={disabled}

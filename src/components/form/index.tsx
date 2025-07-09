@@ -5,7 +5,7 @@ import TextInput from "./inputs/text";
 import TextArea from "./inputs/text-area";
 import { FieldValues } from "react-hook-form";
 import Button from "../base/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export type FormData = {
   email: string;
@@ -17,14 +17,17 @@ export type FormData = {
 
 const Form = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [isReady, setIsReady] = useState(false);
   const {
     handleSubmit,
     register,
     setValue,
     setError,
     reset,
+    watch,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
+    mode: "onBlur",
     defaultValues: {
       email: "",
       message: "",
@@ -35,7 +38,6 @@ const Form = () => {
   });
 
   const onSubmit = async (data: FieldValues) => {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
     const response = await fetch("/api/send-form", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -44,7 +46,6 @@ const Form = () => {
 
     const result = await response.json();
     if (result.error) {
-      console.log("if error ");
       setError("root", {
         message: result.error,
       });
@@ -54,13 +55,44 @@ const Form = () => {
     }
   };
 
+  const formValues = watch();
+
+  useEffect(() => {
+    const hasEmptyField = Object.values(formValues).some(
+      (value) => value === "",
+    );
+
+    if (hasEmptyField) {
+      setIsReady(false);
+    } else {
+      setIsReady(true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [formValues]);
+
   return (
     <>
       {submitted ? (
-        <div className="flex flex-col items-center justify-center">
-          <p className="text-green-500">Bedankt voor je bericht!</p>
+        <div className="flex flex-col items-start justify-center">
+          <h3 className="text-2xl font-bold text-primary-400">
+            We hebben je bericht
+            <br /> in goede orde ontvangen
+          </h3>
+          <p className="text-white">
+            Je hoort snel van ons. Vaak sneller dan je denkt.
+          </p>
         </div>
       ) : (
+        <div className="flex flex-col items-start justify-center">
+          <h3 className="text-2xl font-bold text-primary-400">
+            Digitaal vastgelopen?
+          </h3>
+          <p className="text-white">
+            Stuur een bericht en we zetten het weer in beweging.
+          </p>
+        </div>
+      )}
+      {!submitted && (
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="space-y-4 md:w-[480px]"
@@ -119,7 +151,7 @@ const Form = () => {
             hiarchy="primary"
             title="Verstuur"
             type="submit"
-            className="w-full"
+            className={`w-full ${isReady ? "" : "opacity-50"} transition-opacity duration-200`}
             ariaLabel="Verstuur formulier"
             disabled={isSubmitting}
           />

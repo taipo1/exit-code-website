@@ -4,6 +4,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import "./globals.css";
 import { ContactFormProvider } from "@/context/contact-form-provider";
+import CookieBanner from "@/components/cookie-banner";
 
 const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -35,6 +36,7 @@ export default function RootLayout({
             {children}
             <Footer />
           </ContactFormProvider>
+          <CookieBanner />
         </body>
       </html>
     </>

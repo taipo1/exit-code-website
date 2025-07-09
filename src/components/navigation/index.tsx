@@ -7,7 +7,7 @@ const Navigation = () => {
       <nav className="relative z-50 bg-gradient-to-b pt-2 max-xl:bg-white">
         <Container>
           <div className="col-span-1 col-start-1">
-            <a href="#" className="relative text-2xl font-bold">
+            <a href="/" className="relative text-2xl font-bold">
               <LogoIcon className="max-h-[60px] max-w-[100px]" />
             </a>
           </div>
