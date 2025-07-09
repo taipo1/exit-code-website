@@ -2,6 +2,7 @@ import Image from "../base/base-image";
 import Container from "../base/container";
 import pattern from "@/public/assets/pattern.png";
 import CtaAnimation from "./cta-animation";
+import ContactButton from "../contact-button";
 
 const Cta = () => (
   <section className="mb-20 md:my-20" id="cta">
@@ -23,13 +24,7 @@ const Cta = () => (
             We prikken snel door je processen heen...
           </p>
           <div className="flex gap-2">
-            <a
-              href="/contact"
-              id="cta-button-primary"
-              className="cta-button rounded bg-primary-300 px-4 py-2 text-white transition-colors hover:bg-primary-400"
-            >
-              Neem contact op
-            </a>
+            <ContactButton label="Neem contact op!" />
           </div>
         </div>
         <div className="top-0 z-0 hidden h-full w-full overflow-hidden md:absolute">

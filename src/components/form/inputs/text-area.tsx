@@ -30,7 +30,7 @@ const TextArea = ({ id, label, onChange, register }: Props) => {
         onChange={(e) => onChange(id, e.target.value)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        className={`min-h-[150px] w-full rounded-[4px] border border-white bg-transparent px-4 py-2 text-white transition-colors duration-200 placeholder:text-white focus:border-primary-400 focus:outline-none focus:ring-0`}
+        className={`min-h-[150px] w-full rounded-[4px] border border-white/80 bg-transparent px-4 py-2 text-white transition-colors duration-200 placeholder:text-white focus:border-primary-400 focus:outline-none focus:ring-0`}
       />
     </div>
   );

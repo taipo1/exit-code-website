@@ -4,7 +4,7 @@ import ContactButton from "../contact-button";
 const Navigation = () => {
   return (
     <div className="sticky top-0 z-30">
-      <nav className="relative z-50 bg-gradient-to-b pt-2 max-md:bg-white">
+      <nav className="relative z-50 bg-gradient-to-b pt-2 max-xl:bg-white">
         <Container>
           <div className="col-span-1 col-start-1">
             <a href="#" className="relative text-2xl font-bold">

@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import "./globals.css";
+import { ContactFormProvider } from "@/context/contact-form-provider";
 
 const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -28,9 +29,12 @@ export default function RootLayout({
       </head>
       <html lang="en">
         <body className={`${dmSans.variable} max-w-full antialiased`}>
-          <Navigation />
-          {children}
-          <Footer />
+          <ContactFormProvider>
+            <Navigation />
+
+            {children}
+            <Footer />
+          </ContactFormProvider>
         </body>
       </html>
     </>
