@@ -7,15 +7,15 @@ const About = () => {
     <section id="about" className="my-24">
       <Container className="grid-rows-auto gap-4">
         <div className="col-span-6 mb-4 flex flex-col gap-2 xl:col-span-5 xl:col-start-2 xl:row-start-1">
-          <h2 className="text-[32px] font-semibold leading-[.9] md:text-[48px] md:leading-[.8]">
+          <h2 className="text-[32px] font-semibold leading-[.9] lg:text-[48px] lg:leading-[.8]">
             Bemoeial in beeld
           </h2>
           <p className="text-lg font-semibold text-primary-300">
             Wat gericht anders maakt
           </p>
         </div>
-        <div className="col-span-6 flex flex-col gap-2 md:gap-4 lg:col-span-4 lg:col-start-1 lg:row-start-2 lg:pr-8 xl:col-span-3 xl:col-start-2 xl:pr-16">
-          <h3 className="gap-2 text-lg font-semibold md:text-2xl">
+        <div className="col-span-6 flex flex-col gap-2 lg:gap-4 lg:col-span-4 lg:col-start-1 lg:row-start-2 lg:pr-8 xl:col-span-3 xl:col-start-2 xl:pr-16">
+          <h3 className="gap-2 text-lg font-semibold lg:text-2xl">
             <span className="font-semibold">Wij zijn bemoeials.</span> In de
             beste zin van het woord.
           </h3>
@@ -35,7 +35,7 @@ const About = () => {
           </p>
         </div>
         <div className="col-span-6 row-start-2 flex flex-col gap-2 lg:col-span-4 lg:col-start-5 xl:col-span-3 xl:col-start-5 xl:gap-4 xl:pr-16">
-          <h3 className="text-lg font-semibold md:text-2xl">
+          <h3 className="text-lg font-semibold lg:text-2xl">
             Developers met strategische oren
           </h3>
           <div className="flex h-full flex-col justify-between gap-2">
@@ -52,7 +52,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-6 row-span-1 flex flex-col justify-start md:col-span-4 lg:col-span-4 lg:col-start-9 lg:row-span-2 xl:col-start-8 xl:row-span-2">
+        <div className="col-span-6 row-span-1 flex flex-col justify-start lg:col-span-4 lg:col-span-4 lg:col-start-9 lg:row-span-2 xl:col-start-8 xl:row-span-2">
           <Image
             className="min-h-auto max-h-fit max-w-fit"
             src={me}

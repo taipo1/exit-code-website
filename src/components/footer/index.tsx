@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="bg-secondary-400 pt-12 text-white">
       <Container className="mb-8 gap-y-4">
-        <div className="col-span-12 row-start-1 flex flex-col items-start justify-start gap-4 md:col-span-2 md:col-start-2 md:justify-center">
+        <div className="col-span-12 row-start-1 flex flex-col items-start justify-start gap-4 lg:col-span-2 lg:col-start-2 lg:justify-center">
           <LogoWhite className="w-full" />
         </div>
-        <div className="col-span-12 row-start-2 flex flex-col justify-start gap-2 text-white md:col-span-3 md:col-start-2">
+        <div className="col-span-12 row-start-2 flex flex-col justify-start gap-2 text-white lg:col-span-3 lg:col-start-2">
           <p className="text-md text-left text-white">
             Eén maker, één aanspreekpunt, korte lijnen. Gericht helpt je
             systemen versimpelen, versnellen en slimmer maken.
@@ -17,13 +17,13 @@ const Footer = () => {
             KvK 95373152, Btw: NL005149286B92 Singravenhof 80, Arnhem
           </p>
         </div>
-        <div className="col-span-12 col-start-1 flex flex-col md:col-span-3 md:col-start-6 md:row-start-2">
+        <div className="col-span-12 col-start-1 flex flex-col lg:col-span-3 lg:col-start-6 lg:row-start-2">
           <h3 className="text-white">legal</h3>
           {/* <a href="#" className="text-md text-white">
             nieuwsbrief
           </a> */}
         </div>
-        <div className="col-span-12 col-start-1 flex flex-col md:col-span-3 md:col-start-9 md:row-start-2">
+        <div className="col-span-12 col-start-1 flex flex-col lg:col-span-3 lg:col-start-9 lg:row-start-2">
           <h3 className="text-white">Voor de sociale bemoeial</h3>
           <a
             href="https://www.linkedin.com/company/digitaal-gericht"

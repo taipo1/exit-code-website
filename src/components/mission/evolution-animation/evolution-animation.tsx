@@ -15,25 +15,25 @@ const EvolutionAnimation = () => {
       <div className="relative z-30 col-span-2 col-start-1 row-start-1 flex items-end justify-center pb-4">
         <Ape
           id="ape-1"
-          className="translate-y-[6px] scale-[.6] md:scale-[.8] lg:-translate-y-[13px] xl:-translate-y-[32px]"
+          className="translate-y-[6px] scale-[.6] lg:scale-[.8] lg:-translate-y-[13px] xl:-translate-y-[32px]"
         />
       </div>
       <div className="relative z-30 col-span-2 col-start-3 row-start-1 flex items-end justify-center pb-4">
         <Ape
           id="ape-2"
-          className="translate-y-[4px] scale-[.65] md:scale-[.9] lg:-translate-y-[16px] xl:-translate-y-[36px]"
+          className="translate-y-[4px] scale-[.65] lg:scale-[.9] lg:-translate-y-[16px] xl:-translate-y-[36px]"
         />
       </div>
       <div className="relative z-30 col-span-2 col-start-5 row-start-1 flex items-end justify-center pb-4">
         <Ape
           id="ape-3"
-          className="scale-[.7] md:scale-100 lg:-translate-y-[20px] xl:-translate-y-[40px]"
+          className="scale-[.7] lg:scale-100 lg:-translate-y-[20px] xl:-translate-y-[40px]"
         />
       </div>
       <div className="relative z-30 col-span-2 col-start-7 row-start-1 flex items-end justify-center pb-4">
         <Oermens
           id="ape-4"
-          className="translate-y-[15px] scale-[.7] md:scale-100 lg:-translate-y-[11px] xl:-translate-y-[28px]"
+          className="translate-y-[15px] scale-[.7] lg:scale-100 lg:-translate-y-[11px] xl:-translate-y-[28px]"
         />
       </div>
     </div>

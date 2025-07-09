@@ -15,19 +15,19 @@ const Mission = () => {
         <MissionAnimation />
         <Container
           className={
-            "grid-rows-10 gap-y-2 md:my-12 md:grid-rows-3 xl:grid-rows-2"
+            "grid-rows-10 gap-y-2 lg:my-12 lg:grid-rows-3 xl:grid-rows-2"
           }
         >
           <div
             style={{ transform: "translateZ(0)" }}
-            className="col-span-full row-span-3 row-start-1 flex justify-start overflow-hidden md:col-span-6 md:col-start-2 md:row-span-2 md:pr-12 xl:row-span-2"
+            className="col-span-full row-span-3 row-start-1 flex justify-start overflow-hidden lg:col-span-6 lg:col-start-2 lg:row-span-2 lg:pr-12 xl:row-span-2"
           >
             <EvolutionAnimation />
           </div>
-          <div className="col-span-6 row-span-7 flex flex-col gap-4 md:col-span-4 md:col-start-8 md:row-span-full">
+          <div className="col-span-6 row-span-7 flex flex-col gap-4 lg:col-span-4 lg:col-start-8 lg:row-span-full">
             <h2
               id="mission-title"
-              className="mt-4 text-2xl font-semibold leading-none opacity-0 md:mt-0 md:text-[26px]"
+              className="mt-4 text-2xl font-semibold leading-none opacity-0 lg:mt-0 lg:text-[26px]"
             >
               Van knelpunt naar{" "}
               <span

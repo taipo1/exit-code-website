@@ -6,7 +6,7 @@ type ContainerProps = {
 const Container = ({ children, className }: ContainerProps) => (
   <div className="flex w-full justify-center">
     <div
-      className={`${className} container grid max-w-[1440px] grid-cols-6 gap-x-5 max-xl:px-4 md:grid-cols-12`}
+      className={`${className} container grid max-w-[1440px] grid-cols-6 gap-x-5 max-xl:px-4 lg:grid-cols-12`}
     >
       {children}
     </div>

@@ -21,7 +21,7 @@ const CookieBanner = () => {
   return (
     <>
       {!hasAccepted && (
-        <div className="fixed bottom-4 left-4 right-4 z-50 mx-auto flex max-w-4xl flex-col items-start justify-between gap-4 rounded-xl border border-white bg-secondary-400 p-4 text-white shadow-xl md:flex-row md:items-center">
+        <div className="fixed bottom-4 left-4 right-4 z-50 mx-auto flex max-w-4xl flex-col items-start justify-between gap-4 rounded-xl border border-white bg-secondary-400 p-4 text-white shadow-xl lg:flex-row lg:items-center">
           <div>
             <p className="text-lg font-semibold text-primary-400">
               We houden van koekjes, daarom hebben we ze zelf opgegeten.

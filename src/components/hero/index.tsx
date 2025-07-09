@@ -6,14 +6,14 @@ import HeroAnimation from "./hero-animation";
 const Hero = () => {
   return (
     <section
-      className="flex min-h-[70vh] w-full items-center justify-center md:min-h-[90vh]"
+      className="flex min-h-[70vh] w-full items-center justify-center lg:min-h-[90vh]"
       id="hero"
     >
       <HeroAnimation />
-      <Container className="py-12 max-md:px-6">
-        <div className="col-span-12 flex grid-cols-12 flex-col items-center justify-center gap-5 md:grid">
-          <div className="row-span-3 row-start-1 mb-12 flex flex-col justify-center gap-6 md:col-span-6 md:col-start-2 xl:col-span-5 xl:col-start-3">
-            <h2 className="flex w-full flex-col text-left text-[22px] leading-[1.8rem] sm:text-[28px] sm:leading-[2.2rem] md:text-[32px] lg:text-[38px] lg:leading-[2.8rem] xl:text-[42px]">
+      <Container className="py-12 max-lg:px-6">
+        <div className="col-span-12 flex grid-cols-12 flex-col items-center justify-center gap-5 lg:grid">
+          <div className="row-span-3 row-start-1 mb-12 flex flex-col justify-center gap-6 lg:col-span-6 lg:col-start-2 xl:col-span-5 xl:col-start-3">
+            <h2 className="flex w-full flex-col text-left text-[22px] leading-[1.8rem] sm:text-[28px] sm:leading-[2.2rem] lg:text-[32px] lg:text-[38px] lg:leading-[2.8rem] xl:text-[42px]">
               <span className="font-bold">
                 Genoeg mooie{" "}
                 <span id="hero-products">
@@ -33,7 +33,7 @@ const Hero = () => {
               label="Ga vooruit"
             /> */}
           </div>
-          <LogoIcon className="col-span-3 col-start-7 row-span-1 row-start-3 h-auto w-2/3 self-end md:w-full md:translate-y-8" />
+          <LogoIcon className="col-span-3 col-start-7 row-span-1 row-start-3 h-auto w-2/3 self-end lg:w-full lg:translate-y-8" />
         </div>
       </Container>
     </section>

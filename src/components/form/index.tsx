@@ -95,7 +95,7 @@ const Form = () => {
       {!submitted && (
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="space-y-4 md:w-[480px]"
+          className="space-y-4 lg:w-[480px]"
         >
           <TextInput
             id="name"
