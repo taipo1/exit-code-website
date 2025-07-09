@@ -39,7 +39,7 @@ const ContactButton = () => {
             className="absolute bottom-0 left-0 right-0 top-0 z-0 h-screen w-screen bg-secondary-300/60 backdrop-blur-[2px]"
             aria-label="Close contact form"
           />
-          <div className="relative z-30 mx-2 flex max-h-fit flex-col gap-2 rounded-lg bg-secondary-300 px-12 pb-12 pt-6 text-white transition-all">
+          <div className="relative z-30 mx-2 flex max-h-[85vh] flex-col gap-2 overflow-scroll rounded-lg bg-secondary-300 px-12 pb-12 pt-6 text-white transition-all">
             <Button
               hiarchy="custom"
               type="button"
