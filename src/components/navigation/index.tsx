@@ -8,7 +8,7 @@ const Navigation = () => {
         <Container>
           <div className="col-span-1 col-start-1">
             <a href="/" className="relative text-2xl font-bold">
-              <LogoIcon className="max-h-[60px] max-w-[100px]" />
+              <LogoIcon className="max-h-[64px] max-w-[110px] md:max-w-[100px]" />
             </a>
           </div>
           <div className="col-span-2 col-start-11 flex shrink items-center justify-end">

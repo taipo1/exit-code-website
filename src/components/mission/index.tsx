@@ -10,12 +10,12 @@ const Mission = () => {
     <div id="mission-wrapper">
       <section
         id="mission"
-        className="justify-startopacity-0 relative flex w-full flex-col items-center"
+        className="relative flex w-full flex-col items-center justify-start"
       >
         <MissionAnimation />
         <Container
           className={
-            "grid-rows-10 gap-y-2 lg:my-12 lg:grid-rows-3 xl:grid-rows-2"
+            "grid-rows-10 gap-y-2 md:grid-rows-3 lg:my-12 lg:grid-rows-3 xl:grid-rows-2"
           }
         >
           <div
@@ -24,7 +24,7 @@ const Mission = () => {
           >
             <EvolutionAnimation />
           </div>
-          <div className="col-span-6 row-span-7 flex flex-col gap-4 lg:col-span-4 lg:col-start-8 lg:row-span-full">
+          <div className="col-span-6 row-span-7 flex flex-col gap-4 md:row-span-2 lg:col-span-4 lg:col-start-8 lg:row-span-full">
             <h2
               id="mission-title"
               className="mt-4 text-2xl font-semibold leading-none opacity-0 lg:mt-0 lg:text-[26px]"
@@ -36,20 +36,19 @@ const Mission = () => {
               ></span>
             </h2>
             <div className="flex flex-col gap-4 text-[18px] text-lg">
-              <p className="mission-description opacity-0">
+              <p className="mission-description relative pl-3 opacity-0">
+                <span className="absolute left-0 top-2 h-[86%] w-[2px] bg-primary-300/50" />
                 Websites worden vaak gebouwd om te zeggen wat je doet. Maar
-                verbeteren zelden waar je mee bezig bent.
+                verbeteren zelden waar je mee bezig bent. Gericht is er voor
+                ondernemers die verder willen. Die kansen zien om slimmer te
+                werken.
               </p>
 
-              <p className="mission-description opacity-0">
-                Gericht is er voor ondernemers die verder willen. Die kansen
-                zien om slimmer te werken.
-              </p>
-
-              <p className="mission-description opacity-0">
+              <p className="mission-description relative pl-3 opacity-0">
+                <span className="absolute left-0 top-2 h-[88%] w-[2px] bg-primary-300/50" />
                 Wij zijn bemoeials met een plan. We graven in je processen. Zo
                 zien we wat schuurt. En bouwen wat stroomlijnt. Automatisering,
-                AI, maatwerk. Geen buzzwords — gewoon gericht wat werkt.
+                AI, maatwerk. Geen buzzwords, gewoon gericht wat werkt.
               </p>
             </div>
           </div>

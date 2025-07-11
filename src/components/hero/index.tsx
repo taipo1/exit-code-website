@@ -29,7 +29,7 @@ const Hero = () => {
             {/* <BaseLink
               href="/contact"
               className="w-fit"
-              asButton="primary"
+              linkStyle="primary"
               label="Ga vooruit"
             /> */}
           </div>

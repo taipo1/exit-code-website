@@ -23,12 +23,12 @@ const Cta = () => (
           <p className="text-[22px] text-white">
             We prikken snel door je processen heen...
           </p>
-          <div className="flex gap-2">
+          <div className="mt-8 flex gap-2">
             <ContactButton className="cta-button" label="Neem contact op!" />
           </div>
         </div>
-        <div className="top-0 z-0 hidden h-full w-full overflow-hidden lg:absolute">
-          <div className="absolute inset-0 z-10 bg-gradient-to-r from-secondary-400 to-secondary-300 opacity-60"></div>
+        <div className="top-0 z-0 hidden h-full min-h-[400px] w-full overflow-hidden lg:absolute">
+          <div className="relative inset-0 z-10 bg-gradient-to-r from-secondary-400 to-secondary-300 opacity-60"></div>
           <Image
             className="z-0 min-w-full translate-x-4 translate-y-4 scale-125"
             src={pattern}
