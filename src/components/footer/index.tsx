@@ -5,53 +5,72 @@ import Link from "../base/link";
 const Footer = () => {
   return (
     <footer className="bg-secondary-400 pt-12 text-white">
-      <Container className="mb-8 gap-y-4">
-        <div className="col-span-4 row-start-1 flex flex-col items-start justify-start gap-4 lg:col-span-2 lg:col-start-2 lg:justify-center">
-          <LogoWhite className="w-full" />
-        </div>
-        <div className="col-span-6 col-start-1 row-start-2 flex flex-col gap-2 lg:col-span-3 lg:col-start-9 lg:row-start-2">
-          <h3 className="text-white">Voor de sociale bemoeial</h3>
-          <Link
-            href="https://www.linkedin.com/company/digitaal-gericht"
-            linkStyle="text"
-            className="max-w-fit"
-            label="LinkedIn"
-          />
-        </div>
-        <div className="col-span-6 row-start-3 flex flex-col justify-start gap-6 text-white md:gap-2 lg:col-span-3 lg:col-start-2">
-          <p className="text-md text-left text-white">
-            Eén maker, één aanspreekpunt, korte lijnen. Gericht helpt je
-            systemen versimpelen, versnellen en slimmer maken.
+      <Container className="grid grid-cols-1 gap-y-6">
+        {/* Merk & USP */}
+        <div className="col-span-full flex flex-col gap-4 md:col-span-3">
+          <LogoWhite className="w-44" />
+          <p className="text-base text-white/90 sm:text-lg">
+            Digitale ruis eruit. Grip erin. Eén maker die systemen versimpelt,
+            versnelt en slimmer maakt.
           </p>
-          <ul>
-            <li>Kvk: 95373152</li>
-            <li>Btw: NL005149286B92</li>
-            <li>Adres: Singravenhof 80, Arnhem</li>
-          </ul>
         </div>
-        {/* <div className="col-span-12 col-start-1 flex flex-col lg:col-span-3 lg:col-start-6 lg:row-start-2">
-          <h3 className="text-white">Voor de nieuwschierige</h3>
-          <a href="#" className="text-md text-white">
-            nieuwsbrief
-          </a>
+
+        {/* Juridisch */}
+        <div className="col-span-6 flex flex-col gap-2 md:col-span-3 md:col-start-4">
+          <h3 className="mb-2 text-lg font-semibold text-white sm:text-xl">
+            Juridisch
+          </h3>
+          <Link linkStyle="text" href="/privacy">
+            Privacybeleid
+          </Link>
+          <Link linkStyle="text" href="/algemene-voorwaarden">
+            Algemene voorwaarden
+          </Link>
+          <Link linkStyle="text" href="/geen-cookies">
+            Geen cookies?
+          </Link>
+        </div>
+
+        {/* Contactgegevens */}
+        <div className="col-span-6 row-start-3 flex flex-col gap-2 md:col-span-3 md:col-start-4 md:row-start-2 lg:col-start-7 lg:row-start-1">
+          <h3 className="mb-2 text-lg font-semibold text-white sm:text-xl">
+            Gegevens
+          </h3>
+          <span className="text-sm sm:text-base">KvK: 95373152</span>
+          <span className="text-sm sm:text-base">Btw: NL005149286B92</span>
+          <span className="text-sm sm:text-base">Arnhem</span>
+          {/* <Link linkStyle="text" href="mailto:hello@gericht.nl" target="_blank">
+            hello@gericht.nl
+          </Link> */}
+          <Link
+            linkStyle="text"
+            href="https://www.linkedin.com/company/digitaal-gericht"
+            target="_blank"
+          >
+            Linkedin
+          </Link>
+        </div>
+
+        {/* Actie / CTA */}
+        {/* <div className="flex flex-col gap-4">
+          <h3 className="mb-2 text-lg font-semibold text-white sm:text-xl">
+            Klaar om te starten?
+          </h3>
+          <Link linkStyle="primary" href="#contact">
+            Frictie-scan aanvragen
+          </Link>
+          <Link linkStyle="text" href="#contact">
+            Stuur een bericht
+          </Link>
         </div> */}
       </Container>
-      <div className="bg-white py-2">
+
+      {/* Onderste strook */}
+      <div className="mt-12 bg-white py-4">
         <Container>
-          <div className="col-span-6 row-start-3 flex w-full flex-col items-center justify-center gap-4 md:flex-row">
-            <a href="/privacy" className="text-md text-secondary-400">
-              Privacybeleid
-            </a>
-            <a
-              href="/algemene-voorwaarden"
-              className="text-md text-secondary-400"
-            >
-              Algemene voorwaarden
-            </a>
-            <p className="text-md text-center text-secondary-400 md:text-left">
-              © 2025 Gericht. Alle rechten voorbehouden.
-            </p>
-          </div>
+          <p className="col-span-full text-center text-xs text-secondary-400 sm:text-sm">
+            Gemaakt zonder ruis. © 2025 Gericht
+          </p>
         </Container>
       </div>
     </footer>

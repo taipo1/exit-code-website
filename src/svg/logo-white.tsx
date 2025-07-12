@@ -2,8 +2,8 @@ const LogoWhite = ({ className }: { className?: string }) => (
   <svg
     className={className}
     width="305"
-    height="104"
-    viewBox="0 0 305 104"
+    height="86"
+    viewBox="0 0 305 86"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
