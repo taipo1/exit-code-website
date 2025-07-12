@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="col-span-full flex flex-col gap-4 md:col-span-3">
           <LogoWhite className="w-44" />
           <p className="text-base text-white/90 sm:text-lg">
-            Digitale ruis eruit. Grip erin. Eén maker die systemen versimpelt,
+            Digitale ruis eruit. Grip erin. Één maker die systemen versimpelt,
             versnelt en slimmer maakt.
           </p>
         </div>

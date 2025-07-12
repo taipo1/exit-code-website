@@ -22,7 +22,7 @@ const About = () => {
 
           <p className="relative mb-2 pl-3">
             <span className="absolute left-0 top-2 h-[90%] w-[2px] bg-primary-300/50" />
-            individualisten die de handen in een slaan gericht is gebouwd op
+            Individualisten die de handen in één slaan gericht is gebouwd op
             nieuwsgierigheid. We willen weten hoe je werkt. Waar het piept. Waar
             je kansen laat liggen. Niet om te oordelen, maar om te bouwen wat er
             écht nodig is.

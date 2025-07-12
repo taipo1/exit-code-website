@@ -178,7 +178,7 @@ const PrivacyBeleid = () => {
 
         <h2 className="text-2xl font-semibold text-primary-300">Tot slot</h2>
         <p>
-          Gericht bouwt systemen die ruis wegnemen — niet toevoegen. Wat we niet
+          Gericht bouwt systemen die ruis wegnemen, niet toevoegen. Wat we niet
           verzamelen, kan ook niet lekken. Wij kiezen bewust voor helderheid,
           eenvoud en rust.
         </p>

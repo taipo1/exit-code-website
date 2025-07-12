@@ -15,7 +15,7 @@ const Mission = () => {
         <MissionAnimation />
         <Container
           className={
-            "grid-rows-10 gap-y-2 md:grid-rows-3 lg:my-12 lg:grid-rows-3 xl:grid-rows-2"
+            "grid-rows-7 gap-y-2 md:grid-rows-3 lg:my-12 lg:grid-rows-3 xl:grid-rows-2"
           }
         >
           <div
@@ -47,8 +47,8 @@ const Mission = () => {
               <p className="mission-description relative pl-3 opacity-0">
                 <span className="absolute left-0 top-2 h-[88%] w-[2px] bg-primary-300/50" />
                 Wij zijn bemoeials met een plan. We graven in je processen. Zo
-                zien we wat schuurt. En bouwen wat stroomlijnt. Automatisering,
-                AI, maatwerk. Geen buzzwords, gewoon gericht wat werkt.
+                zien we wat schuurt en bouwen wat stroomlijnt. Automatisering,
+                AI, maatwerk. Geen buzzwords gewoon gericht wat werkt.
               </p>
             </div>
           </div>

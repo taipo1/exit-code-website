@@ -21,7 +21,7 @@ const ClientJourneyExplainer = () => {
           <p id="journey-subtext" className="relative mt-4 pl-3 text-lg">
             <span className="absolute left-0 top-2 h-[82%] w-[2px] bg-primary-300/50" />
             We bouwen precies wat jouw bedrijf nodig heeft om soepeler te
-            draaien. Minder gedoe, meer grip. En altijd gericht op resultaat.
+            draaien. Minder gedoe, meer grip en altijd gericht op resultaat.
           </p>
         </div>
         <div
@@ -29,13 +29,13 @@ const ClientJourneyExplainer = () => {
           className="relative z-10 col-span-full row-start-2 flex flex-col justify-between gap-[72px] md:col-span-3 md:col-start-1 lg:col-span-12 lg:col-start-1 lg:mt-16 lg:flex-row xl:col-span-10 xl:col-start-2"
         >
           <JourneyCard
-            title="Eén sessie. Tien inzichten."
-            description="We stappen in jouw operatie en halen boven wat vertraagt, verdwijnt of fout gaat. Geen audit, maar een scherpe spiegel."
+            title="Één sessie. Tien inzichten."
+            description="We stappen in jouw operatie en halen boven wat vertraagt, verdwijnt of fout gaat. Geen audit wel een scherpe spiegel."
             index={1}
           />
           <JourneyCard
             title="Van knelpunt naar werkend systeem."
-            description="We bouwen tools die je proces écht beter maken: dashboards, koppelingen, automatisering. maatwerk toegespitst op jouw organisatie."
+            description="We bouwen tools die je proces écht beter maken: dashboards, koppelingen, automatisering. Maatwerk toegespitst op jouw organisatie."
             index={2}
             className="self-start"
           />

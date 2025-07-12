@@ -24,7 +24,7 @@ const AlgemeneVoorwaarden = () => {
           Gericht levert diensten op het gebied van digitale optimalisatie,
           automatisering en maatwerkontwikkeling. Gericht werkt altijd vanuit
           een inspanningsverplichting: we doen alles wat redelijkerwijs verwacht
-          mag worden — maar we garanderen geen vooraf bepaald resultaat, tenzij
+          mag worden, maar we garanderen geen vooraf bepaald resultaat, tenzij
           dit schriftelijk en expliciet is vastgelegd.
         </p>
 
@@ -48,7 +48,7 @@ const AlgemeneVoorwaarden = () => {
           </li>
           <li>
             Na afloop wordt het contract automatisch met één jaar verlengd,
-            tenzij een van beide partijen uiterlijk twee maanden vóór afloop
+            tenzij een van beide partijen uiterlijk twee maanden voor afloop
             schriftelijk opzegt.
           </li>
           <li>
@@ -81,7 +81,7 @@ const AlgemeneVoorwaarden = () => {
             betaling is wettelijke rente verschuldigd.
           </li>
           <li>
-            Gericht behoudt zich het recht voor tarieven jaarlijks te indexeren.
+            Gericht behoudt zich het recht om tarieven jaarlijks te indexeren.
           </li>
         </ul>
 
