@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Gericht",
+  "short_name": "Gericht",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
