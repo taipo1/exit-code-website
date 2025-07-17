@@ -25,7 +25,11 @@ export async function POST(req: Request) {
     to: email,
     subject: `je stelde Gericht een vraag over: ${subject}`,
     html: `
-      <p>bedankt voor je mailtje misschien reageren we.</p>
+      <h1>Je bericht is in goede orde ontvangen</h1>
+      <p>Je hoort zo snel mogelijk van ons</p>
+      <br />
+      <p>Groet,</p>
+      <p>Ramsey</p>
       `,
   });
 
