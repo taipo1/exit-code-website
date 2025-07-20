@@ -23,9 +23,9 @@ const Footer = () => {
           <Link linkStyle="text" href="/privacy">
             Privacybeleid
           </Link>
-          <Link linkStyle="text" href="/algemene-voorwaarden">
+          {/* <Link linkStyle="text" href="/algemene-voorwaarden">
             Algemene voorwaarden
-          </Link>
+          </Link> */}
           <Link linkStyle="text" href="/geen-cookies">
             Geen cookies?
           </Link>
