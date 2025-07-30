@@ -10,7 +10,7 @@ export default function Home() {
     <div className="mb-20">
       <Hero />
       <Mission />
-      {/* get some cases bitch */}
+      {/* get some cases */}
       {/* <Cases /> */}
       <ClientJourneyExplainer />
       <Cta />
