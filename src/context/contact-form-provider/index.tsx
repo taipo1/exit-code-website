@@ -32,8 +32,18 @@ export const ContactFormProvider: React.FC<ContactFormProviderProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+  const openModal = () => {
+    // set body overflow to hidden
+    document.body.style.overflow = "hidden";
+    // set isOpen to true
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    // set body overflow to auto
+    document.body.style.overflow = "auto";
+    // set isOpen to false
+    setIsOpen(false);
+  };
 
   return (
     <ContactFormContext.Provider value={{ isOpen, openModal, closeModal }}>
@@ -45,7 +55,7 @@ export const ContactFormProvider: React.FC<ContactFormProviderProps> = ({
             className="absolute bottom-0 left-0 right-0 top-0 z-0 h-screen w-screen bg-secondary-300/60 backdrop-blur-[2px]"
             aria-label="Close contact form"
           />
-          <div className="relative z-30 mx-2 flex max-h-[85vh] flex-col gap-2 overflow-scroll rounded-lg bg-secondary-300 px-12 pb-6 pt-6 text-white transition-all md:max-h-[92vh]">
+          <div className="relative z-30 mx-2 flex max-h-[85vh] flex-col gap-2 overflow-scroll rounded-lg bg-secondary-300 px-12 pb-6 pt-6 text-white transition-all md:max-h-[92vh] lg:overflow-hidden">
             <Button
               hiarchy="custom"
               type="button"
