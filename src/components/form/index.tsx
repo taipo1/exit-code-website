@@ -99,7 +99,7 @@ const Form = () => {
         >
           <TextInput
             id="name"
-            label="Name"
+            label="Naam"
             validation={{
               required: "Laat even weten wie je bent",
             }}
